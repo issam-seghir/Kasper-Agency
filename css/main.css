@@ -13,8 +13,8 @@
 
 :root {
     /*? page padding container */
-    --page-width: 70rem;
-    --page-width-range: 100vw;
+    --page-width: 89rem;
+    --page-width-range: 89vw;
     --page-padding-x:
         calc((var(--page-width-range) - min(80vw, var(--page-width))) / 2);
     /*? fluid fonts */
@@ -33,8 +33,7 @@
     min-height: 0vw;
 
     /*? space */
-    /* 4.5rem(72px) @ 25rem(400px) decreasing to 4rem(64px) @ 75rem(1200px) */
-    --header-height: clamp(4rem, calc(4.5rem + ((1vw - 0.25rem) * -1)), 4.5rem);
+    --header-height: 10rem;
     /* -1.5px @ 400px increasing to 2px @ 1200px */
     --letter-spacing: clamp(-1.5px, calc(-0.09375rem + ((1vw - 4px) * 0.4375)), 2px);
     /* 4rem(64px) @ 25rem(400px) decreasing to 2rem(32px) @ 75rem(1200px) */
@@ -51,7 +50,7 @@
     /* https: //colorhunt.co/palette/222831393e4600adb5eeeeee */
     --main-color: #222831;
     --sub-color-1: #393E46;
-    --sub-color-2: #00ADB5;
+    --sub-color-2: #00adb5;
     --sub-color-3: #EEEEEE;
     /** others */
     --main-transition-delay: 0.3s;
@@ -138,120 +137,182 @@ p {
     color: var(--sub-color);
 }
 
-/*? apply container to all classes except  the landing  class */
-body>*:not(.landing) {
-    padding-inline: var(--page-padding-x);
-}
 
-
+/*? apply container to header */
 /*? part 1 : header layout  */
 header {
+    margin-inline: var(--page-padding-x);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
+    border-block-end: 2px solid var(--sub-color-3);
+    position: relative;
 }
 
 /* logo */
 header .logo {
-    height: 1.6rem;
-    flex: 0 1 4rem;
+    height: 4.6rem;
+    flex: 0 0 23%;
 }
 
 
 header .logo a {
     height: 100%;
-    background-image: url(../assets/images/logo.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../assets/logo/kasper.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
+/* nav bar */
 
-
-
-
-
-body {
-    --font-weight: 1;
-    --font-midline: 0;
-    --font-contrast: 250;
-    font-variation-settings:
-        'wght' var(--font-weight),
-        'MIDL' var(--font-midline),
-        'CONT' var(--font-contrast);
+header nav {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-h1 {
-    --font-weight: 1;
-    --font-contrast: 1000;
-    /* Should be font-style:
-         oblique 10deg; */
-    font-variation-settings:
-        'str' 200, 'slnt' 10;
+.nav__toggle {
+    display: none;
 }
 
 
+@media (max-width: 799px) {
+    .nav__toggle {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        right: 0rem;
+        top: 0rem;
+    }
 
-/* Set the default values */
-:root {
-    --slnt: 0;
-    --GRAD: 0;
+    .nav__wrapper {
+        position: absolute;
+        top: 287%;
+        right: 0;
+        left: -82px;
+        text-align: center;
+        z-index: -1;
+        background-color: #d9f0f7;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .nav__wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* change value for these elements and their children */
-.slanted {
-    --slnt: 10;
+@media (min-width: 800px) {
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
+
 }
 
-.grade-light {
-    --grad: -200;
+/* customize links in dropdown menu */
+header nav ul li a {
+    font-size: var(--navbar-font-size);
+    color: var(--main-color);
+    padding: 1rem;
+    padding-block: calc(var(--header-height) / 2 - 1rem);
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
 }
 
-.grade-normal {
-    --grad: 0;
+header nav ul li:hover a {
+    color: var(--sub-color-2);
+    border-bottom-color: var(--sub-color-2);
+    font-weight: 700;
 }
 
-.grade-heavy {
-    --grad: 150;
+header .search {
+    display: flex;
+
 }
 
-/* Apply whatever value is kept in the CSS variables */
-.slanted,
-.grade-light,
-.grade-normal,
-.grade-heavy {
-    font-variation-settings:
-        'slnt' var(--slnt),
-        'GRAD' var(--GRAD);
+.search__toggle {
+    appearance: none;
+    order: 1;
+    font-size: 0;
+    width: 34px;
+    height: 34px;
+    background: url("../img/header-3/search.svg") center right/22px no-repeat;
+    border: 0;
 }
 
 
-body {
-    --font-weight: 1;
-    --font-midline: 0;
-    --font-contrast: 250;
-    font-variation-settings:
-        'wght' var(--font-weight),
-        'MIDL' var(--font-midline),
-        'CONT' var(--font-contrast);
+@media (min-width: 800px) {
+    .search__toggle {
+        border-left: 1px solid #979797;
+        padding-left: 10px;
+    }
 }
+    @media (max-width: 799px) {
+        .search__toggle {
+            position: absolute;
+            right: 5.5rem;
+            top: 0.65rem;
+            background: url("../assets/images/search") center/22px no-repeat;
+        }
+    }
 
-h1 {
-    --font-weight: 1;
-    --font-contrast: 1000;
+    .search__form {
+        display: none;
+    }
+
+    @media (max-width: 799px) {
+        .search__form {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: red;
+
+        }
+    }
+
+
+
+    .sr-only {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+
+    .search__form input {
+        min-width: 200px;
+        appearance: none;
+        border: 0;
+        background-color: #fff;
+        border-radius: 0;
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+@media (max-width: 799px){
+.search__form input {
+    border-bottom: 1px solid #979797;
 }
+}
+    /* custom cursor */
 
-/* material icons  */
-/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></head> */
-/* <i class="material-icons">cloud</i><i class="material-icons">favorite</i><i class="material-icons">attachment</i><i class="material-icons">computer</i><i class="material-icons">traffic</i> */
-
-/* custom cursor */
-
-html {
+    /* html {
     cursor:
         url('image-path.png'),
         url('image-path-2.svg),
  url('image-path-3.jpeg'),
             auto;
-    }
+    } */
