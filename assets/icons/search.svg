@@ -6,7 +6,7 @@
             transition: all 1.3s ease;
         }
 
-        .search_svg:hover #SVGRepo_bgCarrier {
+        .search_svg:hover #search-icon {
             transform: rotate(360deg);
             stroke-dasharray: 32px;
         }
