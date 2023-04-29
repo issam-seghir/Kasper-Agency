@@ -141,13 +141,21 @@ p {
 /*? apply container to header */
 /*? part 1 : header layout  */
 header {
-    margin-inline: var(--page-padding-x);
+margin-inline:var(--page-padding-x) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
     border-block-end: 2px solid var(--sub-color-3);
     position: relative;
+    position: absolute;
+    width: 75%;
+    top: 0;
+    right: 45%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 84%;
+
 }
 
 
@@ -174,7 +182,7 @@ header nav {
 /* customize links in dropdown menu */
 header nav ul li a {
     font-size: var(--navbar-font-size);
-    color: var(--main-color);
+    color: var(--sub-color-3);
     padding: 1rem;
     padding-block: calc(var(--header-height) / 2 - 1rem);
     border-bottom: 2px solid transparent;
@@ -348,6 +356,23 @@ header .search {
 
 /*? part two : landing */
 
+.landing{
+    background:
+    /* top, transparent red */
+        linear-gradient(
+            rgba(1, 21, 26, 0.441),
+            rgba(7, 118, 149, 0.168),
+            rgba(158, 5, 94, 0.134)
+            ),
+    url(../assets/images/agto-nugroho-wuDvhtaAYYI-unsplash.webp)
+    no-repeat
+    ;
+    /* opacity: 0.95; */
+    background-size: cover , cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
 
 /* custom cursor */
 
