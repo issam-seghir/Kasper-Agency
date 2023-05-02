@@ -2,87 +2,38 @@
 .special {
     position: relative;
     /* 3.6rem(57.6px) @ 25rem(400px) increasing to 6rem(96px) @ 75rem(1200px) */
-    font: 800 clamp(3.6rem, calc(3.6rem + ((1vw - 0.25rem) * 8.8)), 6rem) var(--main-font),
+    font: 400 clamp(3.6rem, calc(3.6rem + ((1vw - 0.25rem) * 8.8)), 6rem) var(--main-font),
         var(--fall-back-font);
-    color: #ebeced;
+    color: var(--main-font);
     margin: 0 auto;
     padding-block: 3.45rem;
+    text-transform: uppercase;
     text-align: center;
-    /* animation: 2s Blazing infinite alternate linear; */
 }
 
-/* inspired from : https: //codepen.io/makan/pen/yyjRZx */
-
-/* @keyframes Blazing {
-    0% {
-        text-shadow: 0 3px 20px var(--sub-color), 0 0 20px var(--sub-color),
-            0 0 10px var(--main-color),
-            0 0 0 var(--main-color),
-            0 0 5px var(--main-color),
-            -2px -5px 5px var(--main-color),
-            4px -10px 10px var(--main-color);
-    }
-
-    25% {
-        text-shadow: 0 3px 20px var(--sub-color), 0 0 30px var(--sub-color),
-            0 0 20px var(--main-color),
-            0 0 5px var(--main-color),
-            -2px -5px 5px var(--main-color),
-            3px -10px 10px var(--main-color),
-            -4px -15px 20px var(--main-color);
-    }
-
-    50% {
-        text-shadow: 0 3px 20px var(--sub-color), 0 0 20px var(--sub-color),
-            0 -5px 10px rgb(66, 255, 129),
-            -2px -5px 5px rgb(66, 255, 129),
-            3px -10px 10px rgb(66, 255, 129),
-            -4px -15px 20px rgb(111, 128, 116),
-            2px -20px 30px rgb(151, 179, 160);
-    }
-
-    75% {
-        text-shadow: 0 3px 20px var(--sub-color), 0 0 20px var(--sub-color),
-            0 -5px 10px var(--main-color),
-            3px -5px 5px var(--main-color),
-            -4px -10px 10px var(--main-color),
-            2px -20px 30px var(--main-color),
-            0px -25px 40px rgba(255, 255, 0, 0)
-    }
-
-    100% {
-        text-shadow: 0 3px 20px var(--sub-color), 0 0 20px var(--sub-color),
-            0 0 10px var(--main-color),
-            0 0 0 var(--main-color),
-            0 0 5px var(--main-color),
-            -2px -5px 5px var(--main-color),
-            4px -10px 10px var(--main-color);
-    }
-} */
-
-.bkg-gray {
-    background-color: var(--sub-two-color);
+.special::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    /* center horizontally */
+    left: 50%;
+    top: 70%;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
 }
 
 .special::after {
-    content: attr(title);
-    display: block;
-    width: 100%;
+    content: '';
     position: absolute;
-    top: 58%;
-    /* transform: translateY(-50%); */
+    display: block;
+    width: min(60%, 20rem);
+    height: .2rem;
+    top: clamp(77%, 9.9rem, 79%);
     /* center horizontally */
     left: 50%;
     transform: translateX(-50%);
-    font: 400 clamp(1rem, calc(0.5rem + ((1vw - 0.25rem) * 2)), 1.5rem) var(--main-font),
-        var(--fall-back-font);
-    color: var(--sub-color)
-}
-
-
-@media screen and (max-width: 500px) {
-    .special::after {
-        top: 56%;
-    }
-
+    background-color: var(--main-color);
 }
