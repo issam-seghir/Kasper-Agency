@@ -442,6 +442,12 @@ header .search {
 }
 
 
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-inline: var(--page-padding-x);
+}
+
 /* custom cursor */
 
 /* html {
