@@ -152,7 +152,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     min-width: 75%;
-
+    z-index: 2;
 }
 
 
@@ -169,7 +169,6 @@ header .logo a {
 header nav {
     display: flex;
     align-items: center;
-    z-index: 2;
 }
 
 .nav__toggle {
@@ -204,14 +203,10 @@ header nav ul li:hover a {
     }
 
     .nav__wrapper {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         background:
             linear-gradient(rgba(10, 34, 38, 0.791),
-                rgba(39, 13, 13, 0.757));
+                rgba(39, 13, 13));
         visibility: hidden;
         opacity: 0;
         transform: translateY(-100%);
@@ -219,9 +214,17 @@ header nav ul li:hover a {
 
     .nav__wrapper.active {
         visibility: visible;
+        width: 100%;
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         opacity: 0.7;
         transform: translateY(0);
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
     }
 
     header nav ul li a {
@@ -368,6 +371,7 @@ header .search {
 /*? part two : landing */
 
 .landing {
+    position: relative;
     background:
         /* top, linear gradient */
         linear-gradient(rgba(1, 21, 26, 0.441),
@@ -376,6 +380,7 @@ header .search {
         /* bottom , owl image */
         url(../assets/images/owl.webp) no-repeat;
     background-size: cover;
+    background-position-x: center;
     min-height: 100vh;
     z-index: 1;
 }
@@ -386,11 +391,11 @@ header .search {
     text-transform: capitalize;
     width: min(100%, 70.5rem);
     margin: 0 auto;
-    padding: 7.6rem;
+    /* 4.5rem(72px) @ 25rem(400px) increasing to 7.5rem(120px) @ 75rem(1200px) */
+    padding: clamp(4.5rem, calc(4.5rem + ((1vw - 0.25rem) * 6)), 7.5rem);
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(12, 102, 102, 0.454);
-    z-index: 3;
 }
 
 .landing .text>* {
@@ -402,8 +407,6 @@ header .search {
     top: 95%;
     left: 50%;
     transform: translateX(-50%);
-    width: 2rem;
-    height: 2rem;
     display: flex;
 }
 
