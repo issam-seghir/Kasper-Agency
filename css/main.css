@@ -36,9 +36,8 @@
     --header-height: 10rem;
     /* -1.5px @ 400px increasing to 2px @ 1200px */
     --letter-spacing: clamp(-1.5px, calc(-0.09375rem + ((1vw - 4px) * 0.4375)), 2px);
-    /* 4rem(64px) @ 25rem(400px) decreasing to 2rem(32px) @ 75rem(1200px) */
-    --main-gap: clamp(2rem, calc(4rem + ((1vw - 0.25rem) * -4)), 4rem);
-    --min-card-width: 270px;
+    --main-gap: 4rem;
+    --min-card-width: 35rem;
     --vertical-space: 5rem;
     --main-border-radius: clamp(5px, 2vw, 7px);
 
@@ -441,11 +440,42 @@ header .search {
     border-color: var(--sub-color-2);
 }
 
+@media (min-width: 830px) {
+    .services {
+        display: grid;
+        gap: var(--main-gap);
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-card-width), 1fr));
+
+    }
+
+    .services .card {
+        display: flex;
+        gap: var(--main-gap);
+    }
+}
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-inline: var(--page-padding-x);
+}
+
+@media (max-width: 829px) {
+    .services .card {
+        text-align: center;
+        margin-block: 4rem;
+    }
+
+    .services .card p {
+        width: min(80%, 55ch);
+        margin: 2rem auto;
+    }
+}
+
+ .services .card h2{
+     margin-block: 1rem 2rem;
+ }
+i {
+    color: var(--sub-color-2);
+    margin-block: 2rem;
 }
 
 /* custom cursor */

@@ -1,32 +1,36 @@
 /* http://127.0.0.1:3000/css/main.css */
 
-header {
-  z-index: 2;
-header nav {
+/* gap: var(--main-gap); */
+grid-gap: var(--main-gap);
+}
 
-  /* transform: translateY(-100%); */
-  /* width: 200%; */
-.nav__wrapper {
-  /* position: absolute; */
-  /* top: 100%; */
-  /* right: 0; */
-  /* left: 0; */
-  /* position: absolute; */
-  /* top: 100%; */
-  /* right: 0; */
-  /* left: 0; */
-  /* background: linear-gradient(rgba(10, 34, 38, 0.791), rgba(39, 13, 13, 0.757)); */
-  background: linear-gradient(rgb(10 34 38 / 65%), rgb(39 13 13));
-.nav__wrapper.active {
-  width: 100%;
-  /* position: relative; */
-  /* top: 4.99rem; */
-  /* left: -34rem; */
-  /* position: absolute; */
-  z-index: 99;
-.landing {
-  position: relative;
-.landing .text {
-  /* z-index: 3; */
-  z-index: 4;
+/* inspector://127.0.0.1/inspector-stylesheet */
+
+.card {
+  display: flex;
+  gap: 2rem;
+}
+
+/* margin-block-end: var(--main-gap); */
+}
+
+i {
+  color: var(--sub-color-2);
+}
+
+}
+
+i {
+  margin-block: 1rem;
+}
+
+.col {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-content: space-between; */
+  /* justify-content: space-between; */
+  /* gap: 4rem; */
+}
+
+}
 }

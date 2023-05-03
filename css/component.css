@@ -25,7 +25,9 @@
     top: 85%;
     border: 2px solid var(--main-color);
     border-radius: 50%;
+    background-color: #ffff ;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .special-title::after {
