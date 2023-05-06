@@ -27,7 +27,7 @@
     --font-size-lg: clamp(2.5rem, calc(2.5rem + ((1vw - 0.22rem) * 1.2453)), 3.16rem);
     /* 2rem(32px) @ 25rem(400px) increasing to 2.37rem(37.92px) @ 75rem(1200px) */
     --font-size-slg: clamp(2rem, calc(2rem + ((1vw - 0.25rem) * 0.74)), 2.37rem);
-    /* 18.01px → 26.39px */
+    /* 18.01px â†’ 26.39px */
     --font-size-sm: clamp(1.13rem, calc(0.86rem + 1.05vw), 1.65rem);
     /* Safari resize fix */
     min-height: 0vw;
@@ -37,7 +37,7 @@
     /* -1.5px @ 400px increasing to 2px @ 1200px */
     --letter-spacing: clamp(-1.5px, calc(-0.09375rem + ((1vw - 4px) * 0.4375)), 2px);
     --main-gap: 4rem;
-    --min-card-width: 35rem;
+    --min-card-width: 37rem;
     --vertical-space: 5rem;
     --main-border-radius: clamp(5px, 2vw, 7px);
 
@@ -440,7 +440,7 @@ header .search {
     border-color: var(--sub-color-2);
 }
 
-@media (min-width: 830px) {
+@media (min-width: 870px) {
     .services {
         display: grid;
         gap: var(--main-gap);
@@ -458,7 +458,7 @@ header .search {
     padding-inline: var(--page-padding-x);
 }
 
-@media (max-width: 829px) {
+@media (max-width: 870px) {
     .services .card {
         text-align: center;
         margin-block: 4rem;
@@ -478,6 +478,44 @@ i {
     margin-block: 2rem;
 }
 
+
+
+/*? part x.x : service presentation  */
+.presentation{
+    position: relative;
+    background: url("../assets/images/blue sea.webp");
+    background-size: cover;
+    /* padding: 8rem; */
+    padding-block-start: 4rem;
+    padding-block: 19vh;
+    /* margin-inline: var(--page-padding-x); */
+}
+
+.presentation .desc{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: #1b788f4c;
+    padding-block-start: 4rem;
+    padding-block-end: 15%;
+    padding-inline-start: 4rem;
+    padding-inline-end: 15%;
+}
+
+
+/* http://127.0.0.1:3000/css/main.css */
+
+.presentation img {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    /* color: #1b7bd0; */
+    /* background-color: blue; */
+    transition: all 1s ease;
+}
 /* custom cursor */
 
 /* html {

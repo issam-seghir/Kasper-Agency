@@ -1,5 +1,6 @@
 .special {
-    padding-block: var(--vertical-space)
+    padding-block: var(--vertical-space);
+    padding-inline: var(--page-padding-x);
 }
 
 .special-title {
