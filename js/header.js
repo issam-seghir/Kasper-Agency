@@ -26,6 +26,31 @@ function showSearch() {
     navWrapper.classList.remove("active");
 }
 
-/* eslint quotes: ["error", "double"] */
-const a = "b";
-const b = "c";
+// for section part : portfolio gallery
+
+const list = document.querySelectorAll(".list");
+const itemBox = document.querySelectorAll(".itemBox");
+
+for (const elementI of list) {
+    elementI.addEventListener("click", function () {
+        for (const elementJ of list) {
+            elementJ.classList.remove("active");
+        }
+        this.classList.add("active");
+
+        const dataFilter = this.getAttribute("data-filter");
+
+        for (const elementK of itemBox) {
+            elementK.classList.remove("active");
+            elementK.classList.add("hide");
+
+            if (
+                elementK.getAttribute("data-item") === dataFilter ||
+                dataFilter === "all"
+            ) {
+                elementK.classList.remove("hide");
+                elementK.classList.add("active");
+            }
+        }
+    });
+}
