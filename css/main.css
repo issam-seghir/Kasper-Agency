@@ -48,7 +48,7 @@
     --main-font: "Open sans";
     /** color palate */
     /* https: //colorhunt.co/palette/222831393e4600adb5eeeeee */
-    --main-color: #222831;
+    --main-color: #212730;
     --sub-color-1: #393E46;
     --sub-color-2: #00adb5;
     --sub-color-3: #EEEEEE;
@@ -739,7 +739,7 @@ div[data-item*="assassin"] img {
     height: 60vh;
 }
 
-video#myVideo {
+.hero video#myVideo {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -752,12 +752,12 @@ video#myVideo {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.337);
+    /* background-color: rgba(0, 0, 0, 0.337); */
+    background: linear-gradient(to right top, #00acb521, #2890a283, #3a72883a, #0716208c, #252a31be);
 }
 
-.desc {
+.hero .desc {
     padding-block: min(25%, 12rem);
-    background-image: linear-gradient(to right top, #00acb57a, #2890a276, #3a728874, #3f57683e, #393e46);
     position: absolute;
     top: 50%;
     text-align: center;
@@ -766,7 +766,40 @@ video#myVideo {
     transform: translate(-50%, -50%);
 }
 
-.desc h2,
+.hero .desc h1{
+    text-transform: uppercase;
+
+}
+.hero .desc p {
+    text-transform: capitalize;
+    margin-block-end: 1rem;
+}
+
+
+.hero .desc button {
+    text-transform: uppercase;
+    border: 3px solid var(--sub-color-1);
+    padding: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.4rem ;
+    text-shadow: #000;
+    color:rgb(127, 199, 207);
+        backdrop-filter: blur(19px) saturate(178%);
+            -webkit-backdrop-filter: blur(19px) saturate(178%);
+            background-color: rgba(1, 11, 17, 0.662);
+            border-radius: 12px;
+            transition: all 0.5s linear;
+}
+
+.hero .desc button:hover {
+    background-color: rgb(34, 40, 49);
+    border-color: #00adb5;
+    color: rgb(19, 224, 255);
+    box-shadow: 0 0 20px 0px rgba(41, 134, 159, 0.81);
+    text-shadow: 0 -6px 18px rgba(16, 193, 187, 0.52);
+}
+.desc h1,
 .desc p {
     color: var(--sub-color-3);
 }
