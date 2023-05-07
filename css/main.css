@@ -205,9 +205,7 @@ header nav ul li:hover a {
 
     .nav__wrapper {
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        background:
-            linear-gradient(rgba(10, 34, 38, 0.791),
-                rgba(39, 13, 13));
+        background:rgb(2, 20, 28);
         visibility: hidden;
         opacity: 0;
         transform: translateY(-100%);
@@ -217,7 +215,7 @@ header nav ul li:hover a {
         visibility: visible;
         width: 100%;
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        opacity: 0.7;
+        opacity: 0.8;
         transform: translateY(0);
     }
 
@@ -393,9 +391,7 @@ header .search {
     position: relative;
     background:
         /* top, linear gradient */
-        linear-gradient(rgba(1, 21, 26, 0.441),
-            rgba(7, 118, 149, 0.168),
-            rgba(158, 5, 94, 0.134)),
+        linear-gradient(to right top, #00acb521, #2890a283, #3a72883a, #0716208c, #252a31be),
         /* bottom , owl image */
         url(../assets/images/owl.webp) no-repeat;
     background-size: cover;
@@ -414,7 +410,7 @@ header .search {
     padding: clamp(4.5rem, calc(4.5rem + ((1vw - 0.25rem) * 6)), 7.5rem);
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(12, 102, 102, 0.454);
+    background-color: rgba(0, 172, 181, 0.746);
 }
 
 .landing .text>* {
@@ -496,7 +492,7 @@ i {
 .presentation .desc {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%, -50%);
     right: 0;
     background-color: #1b788f4c;
     padding-block-start: 4rem;
@@ -579,13 +575,15 @@ i {
 
         max-width: 50%;
     }
+
     .itemBox:last-child {
 
         max-width: 50%;
     }
+
     .itemBox:last-child img {
 
-        object-position: center  ;
+        object-position: center;
     }
 
 }
@@ -734,6 +732,45 @@ div[data-item*="assassin"] img {
 .portfolio #btnBox:checked~.btn-area .btn1 {
     display: none;
 }
+
+.hero {
+    position: relative;
+    background-color: #00000038;
+    height: 60vh;
+}
+
+video#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.337);
+}
+
+.desc {
+    padding-block: min(25%, 12rem);
+    background-image: linear-gradient(to right top, #00acb57a, #2890a276, #3a728874, #3f57683e, #393e46);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.desc h2,
+.desc p {
+    color: var(--sub-color-3);
+}
+
 /* custom cursor */
 
 /* html {
