@@ -849,8 +849,39 @@ div[data-item*="assassin"] img {
     color: var(--sub-color-3);
 }
 
+.achievement{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+
+.achievement >*{
+    flex-basis: 30rem;
+}
+.achievement .desc{
+    text-align: center;
+    line-height: 1.7;
+    margin-block-end:2rem;
+}
+.achievement .desc h3{
+    text-transform: uppercase;
+    padding: 2rem;
+
+}
+
+.achievement .desc p {
+    color: #000;
+}
 
 
+.achievement .feedback .cards{
+    /* padding: 2rem; */
+}
+
+.achievement .feedback .cards .card{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* custom cursor */
 
 /* html {
