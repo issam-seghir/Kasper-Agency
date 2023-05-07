@@ -26,7 +26,7 @@ function showSearch() {
     navWrapper.classList.remove("active");
 }
 
-// for section part : portfolio gallery
+// portfolio gallery filter
 
 const list = document.querySelectorAll(".list");
 const itemBox = document.querySelectorAll(".itemBox");
