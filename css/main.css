@@ -205,7 +205,7 @@ header nav ul li:hover a {
 
     .nav__wrapper {
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        background:rgb(2, 20, 28);
+        background: rgb(2, 20, 28);
         visibility: hidden;
         opacity: 0;
         transform: translateY(-100%);
@@ -471,8 +471,11 @@ header .search {
     margin-block: 1rem 2rem;
 }
 
-i {
+.services .card i {
     color: var(--sub-color-2);
+}
+
+i {
     margin-block: 2rem;
 }
 
@@ -766,30 +769,35 @@ div[data-item*="assassin"] img {
     transform: translate(-50%, -50%);
 }
 
-.hero .desc h1{
+.hero .desc h1 {
     text-transform: uppercase;
+    text-shadow: 0 -6px 18px rgb(116, 129, 150);
+
 
 }
+
 .hero .desc p {
     text-transform: capitalize;
     margin-block-end: 1rem;
+    font-weight: 600;
 }
 
 
 .hero .desc button {
     text-transform: uppercase;
-    border: 3px solid var(--sub-color-1);
+    border: 3px solid transparent;
     padding: 1em;
     font-weight: 600;
     cursor: pointer;
-    font-size: 1.4rem ;
+    font-size: 1.4rem;
     text-shadow: #000;
-    color:rgb(127, 199, 207);
-        backdrop-filter: blur(19px) saturate(178%);
-            -webkit-backdrop-filter: blur(19px) saturate(178%);
-            background-color: rgba(1, 11, 17, 0.662);
-            border-radius: 12px;
-            transition: all 0.5s linear;
+    color: rgb(133, 236, 247);
+    backdrop-filter: blur(19px) saturate(178%);
+    -webkit-backdrop-filter: blur(19px) saturate(178%);
+    background-color: rgba(1, 11, 17, 0.662);
+    border-radius: 12px;
+    transition: all 0.5s linear;
+    margin-block-start: 1rem;
 }
 
 .hero .desc button:hover {
@@ -799,10 +807,49 @@ div[data-item*="assassin"] img {
     box-shadow: 0 0 20px 0px rgba(41, 134, 159, 0.81);
     text-shadow: 0 -6px 18px rgba(16, 193, 187, 0.52);
 }
+
 .desc h1,
 .desc p {
     color: var(--sub-color-3);
 }
+
+.about {
+    background-color: #0A1D31;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='468' height='468' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300ADB5' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230AFFD3'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1271%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsRadialGradient1272)'%3e%3c/rect%3e%3cpath d='M78.59129836909587 332.6922433586731L-13.187194401851997 392.2938934563495 122.10452713013653 500.1608075639331z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M540.7590406910219 142.63160015370116L505.0857609543282 252.4226659163712 614.8768267169982 288.095945653065 650.550106453692 178.30487989039494z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1104.933403795915 278.3316650023668L1205.3858893890615 158.6170544117163 1085.671278798411 58.16456881856979 985.2187932052644 177.87917940922028z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1092.711%2c561.546C1124.943%2c563.142%2c1161.635%2c556.857%2c1176.711%2c528.323C1191.257%2c500.791%2c1172.111%2c469.865%2c1154.836%2c443.958C1140.016%2c421.732%2c1119.362%2c404.178%2c1092.711%2c402.348C1062.375%2c400.265%2c1029.417%2c408.177%2c1013.815%2c434.276C997.909%2c460.884%2c1005.65%2c494.313%2c1021.983%2c520.661C1037.361%2c545.468%2c1063.56%2c560.102%2c1092.711%2c561.546' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M760.48%2c452.648C796.745%2c450.617%2c830.151%2c434.293%2c849.509%2c403.559C870.325%2c370.51%2c877.154%2c329.795%2c859.944%2c294.733C840.563%2c255.248%2c804.464%2c221.9%2c760.48%2c222.177C716.847%2c222.451%2c684.539%2c257.934%2c663.16%2c295.971C642.307%2c333.071%2c629.869%2c378.45%2c652.325%2c414.602C673.938%2c449.397%2c719.583%2c454.938%2c760.48%2c452.648' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M613.2666901024247 266.6534590684849L514.4464222306794 343.86031396422305 591.6532771264176 442.6805818359683 690.4735449981629 365.47372694023016z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M323.6159191335345 377.8850118550732L436.6176435481892 289.7716894847458 321.3133349570951 240.82791428736562z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M632.2549008310349 508.59743435005913L511.28390303612645 471.61288875748767 474.299357443555 592.583886552396 595.2703552384635 629.5684321449676z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M482.314%2c103.359C503.008%2c103.469%2c524.797%2c96.808%2c534.694%2c78.634C544.285%2c61.022%2c536.54%2c40.231%2c525.977%2c23.184C516.105%2c7.252%2c501.055%2c-5.642%2c482.314%2c-5.901C463.165%2c-6.165%2c446.511%2c5.615%2c436.511%2c21.948C425.986%2c39.137%2c421.009%2c60.515%2c430.892%2c78.081C440.93%2c95.922%2c461.843%2c103.25%2c482.314%2c103.359' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1271'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='50%25' cy='50%25' r='772.53' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1272'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(27%2c 29%2c 33%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    /* For browsers that do not support gradients */
+    padding-inline: 8rem;
+        padding-block: 14rem;
+}
+
+.about .statistic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    text-align: center;
+    margin-inline: var(--page-padding-x);
+    border: 2px solid #043746;
+    border-radius: 5rem;
+    background-color: #00acb5b2;
+    padding: 1rem;
+}
+
+.about .statistic .col p {
+    text-transform: capitalize;
+    margin-block-end: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #09f1b8, #c2fde3, #80dfff, hsla(189, 90%, 47%, 0.431));
+    color: rgb(255, 255, 255);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.about .statistic .col i {
+    color: var(--sub-color-3);
+}
+
+
 
 /* custom cursor */
 

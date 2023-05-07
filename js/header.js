@@ -54,3 +54,37 @@ for (const elementI of list) {
         }
     });
 }
+
+// Animated Counter on Scroll-down(only)
+
+let isAlreadyRun = false;
+
+$(window).scroll(() => {
+    $(".about").each(function (i) {
+        const bottomOfObject =
+            $(this).position().top + $(this).outerHeight() / 2;
+        const bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+        if (bottomOfWindow > bottomOfObject + 20) {
+            if (!isAlreadyRun) {
+                $(".js-count-up").each(function () {
+                    $(this)
+                        .prop("col", 0)
+                        .animate(
+                            {
+                                Counter: $(this).text(),
+                            },
+                            {
+                                duration: 3500,
+                                easing: "swing",
+                                step(now) {
+                                    $(this).text(Math.ceil(now));
+                                },
+                            }
+                        );
+                });
+            }
+            isAlreadyRun = true;
+        }
+    });
+});
