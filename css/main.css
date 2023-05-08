@@ -390,14 +390,45 @@ header .search {
 .landing {
     position: relative;
     background:
-        /* top, linear gradient */
-        linear-gradient(to right top, #00acb521, #2890a283, #3a72883a, #0716208c, #252a31be),
-        /* bottom , owl image */
         url(../assets/images/owl.webp) no-repeat;
     background-size: cover;
     background-position-x: center;
     min-height: 100vh;
     z-index: 1;
+}
+
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(38deg, #00acb521, #2890a283, #3a72883a, #0716208c, #252a31be);
+    background-size: cover;
+
+    animation: AnimationName 9s ease infinite both reverse;
+}
+
+@keyframes AnimationName {
+    5% {
+        background-size: 400% 400%;
+        background-position: 60% 35%
+    }
+
+    50% {
+        background-size: 400% 400%;
+        background-position: 61% 80%;
+    }
+
+    70% {
+        background-size: 400% 400%;
+        background-position: 40% 0%;
+    }
+
+    100% {
+        background-size: cover;
+    }
 }
 
 .landing .text {
@@ -820,7 +851,7 @@ div[data-item*="assassin"] img {
     background-size: cover;
     /* For browsers that do not support gradients */
     padding-inline: 8rem;
-        padding-block: 14rem;
+    padding-block: 14rem;
 }
 
 .about .statistic {
@@ -849,21 +880,31 @@ div[data-item*="assassin"] img {
     color: var(--sub-color-3);
 }
 
-.achievement{
+
+.achievement {
     display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-block: 6rem;
 }
 
-.achievement >*{
-    flex-basis: 30rem;
+.achievement>* {
+    flex-basis: 58rem;
 }
-.achievement .desc{
-    text-align: center;
+
+.achievement .feedback .desc {
     line-height: 1.7;
-    margin-block-end:2rem;
+    margin-block-end: 2rem;
+    text-align: center;
 }
-.achievement .desc h3{
+.achievement .skills .desc {
+    line-height: 1.7;
+    margin-block-end: 13rem;
+    text-align: center;
+}
+
+.achievement .desc h3 {
     text-transform: uppercase;
     padding: 2rem;
 
@@ -871,18 +912,386 @@ div[data-item*="assassin"] img {
 
 .achievement .desc p {
     color: #000;
+    padding-inline: 5rem;
 }
 
-
-.achievement .feedback .cards{
-    /* padding: 2rem; */
+ .achievement .feedback .cards {
+    position: relative;
 }
 
-.achievement .feedback .cards .card{
+.achievement .feedback .cards .card {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--sub-color-1);
+    font-style: italic;
+    /* 30px @ 540px increasing to 90px @ 1200px */
+    margin-block-end: clamp(30px, calc(1.875rem + ((1vw - 5.4px) * 9.0909)), 90px);
 }
-/* custom cursor */
+
+.achievement .feedback .cards .card .profile-pic {
+    border-radius: 50%;
+    border: 5px solid rgba(36, 193, 224, 0.53);
+    height: 115px;
+    flex-basis: 115px;
+    position: relative;
+    /* 80px @ 525px decreasing to 20px @ 1200px */
+    margin-block: clamp(20px, calc(5rem + ((1vw - 5.25px) * -8.8889)), 80px);
+    margin-inline: 2rem;
+
+}
+
+.achievement .feedback .cards .card .profile-pic img {
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.achievement .feedback .cards .card .profile-pic::before {
+    content: "";
+    position: absolute;
+background: linear-gradient(to right,
+            rgba(222, 158, 255, 1),
+            rgba(179, 248, 238, 0.875));
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+height: 110%;
+width: 110%;
+z-index: -1;
+    border-radius: 50%;
+}
+
+
+
+.achievement .feedback .cards .card .comment {
+    position: relative;
+    flex: 1 70%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.achievement .feedback .cards .card .comment::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 2px;
+    border-radius: 5rem 5rem;
+    width: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right,
+                rgba(222, 158, 255, 1),
+                rgba(179, 248, 238, 0.875));
+}
+
+.achievement .feedback .cards .card .profile-pic::after {
+    content: attr(job);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    font-size: 1.1rem;
+    font-style: normal;
+    height: 21px;
+    width: 85%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: center, 0% 50%;
+    }
+
+    50% {
+        background-position: center, 100% 50%;
+    }
+
+    100% {
+        background-position: center, 0% 50%;
+    }
+}
+
+
+.achievement .feedback .cards .bullet {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+
+.achievement .feedback .cards .bullet li {
+    border-radius: 50%;
+    border: 1px solid rgba(12, 180, 226, 0.799) ;
+    padding: 0.6rem;
+    margin-inline: .7rem;
+}
+
+.achievement .feedback .cards .bullet .active-bckg {
+    background: linear-gradient(-40deg,
+    rgb(179, 248, 238),
+    rgba(223, 158, 255, 0.648)
+    );
+    border-color: rgba(253, 200, 253, 0.501)
+}
+
+:root {
+    --c1: #2187e7;
+    --b2: #051e2b;
+    --b3: #d1aeae;
+    --w1: #2de8e5;
+    --w2: #c4f7ff;
+    --t1: all 0.5s ease 0s;
+}
+
+
+.progress {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#sk3{
+    display: none;
+}
+ul.skills {
+    --c1: rgba(23, 82, 94, 0.897);
+    width: 100%;
+    position: relative;
+    padding: 2.5rem 5.5rem;
+    background: linear-gradient(0deg, var(--c1) 0 10px, var(--b2) 0 calc(100% - 10px), var(--c1) 0 100%);
+
+}
+
+
+
+ul.skills:before {
+content: "Skills";
+    text-transform: uppercase;
+    position: absolute;
+    top: -68px;
+    color: var(--w1);
+    background-color: var(--b2);
+    width: 100%;
+    left: 0;
+    padding: 9px 16px 0 0;
+    text-align: end;
+    font-weight: 600;
+    z-index: 7;
+    transition: var(--t1);
+    font-size: 47px;
+    line-height: 35px;
+    transform: scaleY(1.65);
+
+}
+
+
+
+ul.skills:after {
+    content: "";
+    position: absolute;
+    border: 40px solid rgba(133, 38, 38, 0);
+    border-top-color: var(--b2);
+    top: -30px;
+    left: 10px;
+    z-index: 0;
+    transition: var(--t1);
+    filter: drop-shadow(0 11px 0.1px var(--w1));
+}
+
+ul.skills:hover:before,
+label:hover+ul.skills:before,
+input:checked+label+ul.skills:before {
+    transition: var(--t1);
+     background: linear-gradient(-40deg,
+                rgb(9, 25, 46),
+                rgb(32, 68, 68));;
+    background-position: 0 50%;
+}
+
+ul.skills:hover:after,
+label:hover+ul.skills:after,
+input:checked+label+ul.skills:after {
+    top: -20px;
+    transition: var(--t1);
+    border-top-color: rgb(32, 68, 68);
+}
+
+ul.skills li {
+    --per: 50;
+    --dur: calc(calc(var(--per) / 100) * 1.5s);
+    margin: 0 0 5px 0;
+    list-style: none;
+    padding: 20px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--w2);
+}
+
+ul.skills li:before {
+    content: "";
+    position: absolute;
+    background: #ebebeb;
+    height: 16px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    border-inline-start: 1px solid #75c1f7;
+    --track: #435262d9;
+    background: linear-gradient(90deg,
+            var(--track) calc(calc(var(--per) * 1%) + 4px),
+            #c5f4ff1b calc(calc(var(--per) * 1%) + 4px));
+}
+
+
+ul.skills li:after {
+    content: "";
+    height: 11px;
+    margin: 0 0 2px 0;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px #00c6ff66;
+    left: 3px;
+    width: 0%;
+    bottom: 0;
+    transition: all var(--dur) ease 0s;
+    animation: start 1s ease 0s 2 alternate;
+}
+
+ul.skills li:hover {
+    filter: brightness(1.5);
+    transition: var(--t1);
+}
+
+ul.skills:hover li:after,
+label:hover+ul.skills li:after,
+input:checked+label+ul.skills li:after {
+    width: calc(calc(var(--per) * 1%) - 2px);
+}
+
+@keyframes start {
+    100% {
+        width: calc(calc(var(--per) * 1%) - 2px);
+    }
+}
+
+
+
+ul.skills li span {
+    font-weight: 500;
+}
+
+ul.skills li span:before {
+    position: absolute;
+    right: -25px;
+    top: 43px;
+    transition: var(--t1);
+    content: "";
+    opacity: 1;
+
+    border: 7px solid #fff0;
+}
+
+ul.skills li:hover span:before,
+.profile-skills input:checked+label+ul.skills li span:before {
+    transition: var(--t1);
+    right: calc(calc(calc(100 - var(--per)) * 1%) - 12px);
+    opacity: 1;
+    border-right-color: #2187e7;
+}
+
+
+
+ul.skills li span:after {
+    position: absolute;
+    right: -40px;
+    top: 38px;
+    transition: var(--t1);
+    counter-reset: percent var(--per);
+    /*content: counter(percent) "%";*/
+    content: counter(percent);
+    color: var(--b2);
+    opacity: 1 !important;
+    padding: 4px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+ul.skills li:hover span:after,
+.profile-skills input:checked+label+ul.skills li span:after {
+    transition: var(--t1);
+    right: calc(calc(85 - var(--per)) * 1%);
+    right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
+    opacity: 1;
+    background: #2187e7;
+}
+
+
+/*********************/
+/*** SKILLS VALUES ***/
+/*********************/
+
+ul.skills li.sk-css {
+    --per: 95;
+}
+
+ul.skills li.sk-htm {
+    --per: 90;
+}
+
+ul.skills li.sk-php {
+    --per: 80;
+}
+
+ul.skills li.sk-sql {
+    --per: 65;
+}
+ul.skills li.jav {
+    --per: 50;
+}
+
+
+
+
+/*** Mobile view disabled to get (almost) the desired thumbnail ***/
+/*** Uncomment below code to add the media query for mobile view ***/
+
+
+@media only screen and (max-width: 768px) {
+	ul.skills li:after {
+		width: calc(calc(var(--per) * 1%) - 2px);
+	}
+	ul.skills li span:before {
+		transition: var(--t1);
+		right: calc(calc(96.5 - var(--per)) * 1%);
+		opacity: 1;
+		border-right-color: #2187e7;
+	}
+
+	ul.skills li span:after {
+		transition: var(--t1);
+		right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
+		opacity: 1;
+		background: var(--c1);
+	}
+    .progress{
+        padding: 2rem;
+    }
+}
+
+            /* custom cursor */
 
 /* html {
     cursor:
