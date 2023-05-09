@@ -692,6 +692,7 @@ i {
     padding: 20px;
     align-items: flex-end;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .product .itemBox .content h2 {
