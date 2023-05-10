@@ -1867,22 +1867,22 @@ footer .logo {
     z-index: 7;
 }
 
-.pricing .pricing-item:hover{
+.pricing .pricing-item:hover {
     transform: scale(1.1);
-    box-shadow: -1rem 0 3rem #4dd2ff;
+    box-shadow: -1rem 0 3rem #3d6b77a9;
     z-index: 99;
 }
 
 @media (min-width: 1050px) {
 
-    .pricing .pricing-item:hover{
+    .pricing .pricing-item:hover {
         margin-left: -50px;
     }
 }
 
 
 
-/* pricing card price section */
+/* Top part of the card */
 .pricing .pricing-item .pricing-deco {
 
     border-radius: 10px 10px 0 0;
@@ -1893,9 +1893,6 @@ footer .logo {
     overflow: hidden;
 }
 
-.pricing .pricing-item--featured .pricing-deco {
-    padding: 5em 0 8.885em 0;
-}
 
 /* svg animation */
 .pricing .pricing-item #wave {
@@ -1905,42 +1902,42 @@ footer .logo {
 }
 
 
-.path-sw-gradient-0{
+.path-sw-gradient-0 {
     animation: slide 1.5s infinite alternate linear;
 
 }
-.path-sw-gradient-1{
+
+.path-sw-gradient-1 {
     animation: slide-2 2s infinite alternate;
 
 }
-.pricing .pricing-item:hover  .path-sw-gradient-0 {
+
+.pricing .pricing-item:hover .path-sw-gradient-0 {
     animation-play-state: paused;
     fill: rgba(168, 221, 225, 1);
 }
-.pricing .pricing-item:hover  .path-sw-gradient-1 {
+
+.pricing .pricing-item:hover .path-sw-gradient-1 {
     animation-play-state: paused;
     fill: rgba(168, 221, 225, 0.608);
 
 }
 
 @keyframes slide {
-            to {
-                transform: translateY(-35px);
-            }
-        }
-@keyframes slide-2 {
-            to {
-                transform: translateX(50px);
-            }
-        }
+    to {
+        transform: translateY(-35px);
+    }
+}
 
-.pricing .pricing-item:hover  .path-sw-gradient-2 {
-    transform: translate3d(-15px, 0, 0);
+@keyframes slide-2 {
+    to {
+        transform: translateX(50px);
+    }
 }
 
 
-.pricing .pricing-item .pricing-title {
-    font-size: 0.75em;
+.pricing .pricing-item .pricing-deco .pricing-title {
+    font-size: 1.25rem;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -1948,57 +1945,68 @@ footer .logo {
 }
 
 
-.icon {
-    font-size: 2.5em;
-}
-
-.pricing-price {
-    font-size: 5em;
+.pricing .pricing-item .pricing-deco .pricing-price {
+    font-size: 5rem;
     font-weight: bold;
     padding: 0;
     color: #fff;
     margin: 0 0 0.25em 0;
     line-height: 0.75;
+    position: relative;
 }
 
-.pricing-currency {
-    font-size: 0.15em;
+.pricing .pricing-item .pricing-deco .pricing-price .pricing-currency {
+    font-size: 1.5rem;
     vertical-align: top;
 
 }
 
-.pricing-period {
-    font-size: 0.15em;
-    padding: 0 0 0 0.5em;
-
-    font-style: italic;
-}
-
-.pricing__sentence {
-    font-weight: bold;
-    margin: 0 0 1em 0;
-    padding: 0 0 0.5em;
-}
 
 
-/*  price list */
+/*  Bottom  part of the card */
 
 .pricing .pricing-item .pricing-feature-list {
     margin: 0;
     padding: 0.25em 0 2.5em;
     list-style: none;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
+
+.pricing .pricing-item .pricing-feature-list .pricing-feature::marker {
+    content: '✔';
+    font-size: 1.2em;
+    padding: 5rem;
+}
+
+.pricing .pricing-item .pricing-feature-list .pricing-feature {
+    padding: 0.75em 0;
+}
+
+
 
 /* price button */
 .pricing .pricing-item .pricing-action {
-    color: inherit;
+    cursor: pointer;
     border: none;
-    background: none;
+    background: rgba(9, 52, 69, 0.922);
+    font-weight: bold;
+    margin: auto 3em 2em 3em;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s;
 }
 
-.pricing .pricing-item .pricing-action:focus {
+.pricing-item .pricing-action:hover,
+.pricing-item .pricing-action:focus {
+
+    background-color: #051622d5;
+    font-size: 1.3rem;
+    box-shadow: -1rem 0 3rem #3d6b77a9;
     outline: none;
+
 }
 
 
@@ -2016,27 +2024,9 @@ footer .logo {
 
 
 
-.pricing-feature {
-    padding: 1em 0;
-}
 
-.pricing-item .pricing-action {
-    font-weight: bold;
-    margin: auto 3em 2em 3em;
-    padding: 1em 2em;
-    color: #fff;
-    border-radius: 30px;
-    background: #4d4766;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-}
 
-.pricing-item .pricing-action:hover,
-.pricing-item .pricing-action:focus {
 
-    background-color: #100A13;
-
-}
 
 
 
