@@ -1977,11 +1977,12 @@ footer .logo {
 .pricing .pricing-item .pricing-feature-list .pricing-feature::marker {
     content: '✔';
     font-size: 1.2em;
-    padding: 5rem;
 }
 
 .pricing .pricing-item .pricing-feature-list .pricing-feature {
     padding: 0.75em 0;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 
