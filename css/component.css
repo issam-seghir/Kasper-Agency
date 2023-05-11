@@ -143,17 +143,23 @@ hr::before {
     content: '';
     position: absolute;
     border: 2px solid #aae7f8;
-    width: 53%;
+    width: 32rem;
     border-radius: 2px;
     box-shadow: 0 0 3px rgba(236, 173, 255, 0.918);
-    /* z-index: -1; */
+
     animation: glowMinr 2s ease-in-out;
     -webkit-animation: glowMinor 2s ease-in-out infinite
 }
 
-@media (min-width:585px) {
+@media (min-width:768px) {
     hr::before {
-        width: 28rem;
+        width: 30rem;
+    }
+}
+@media (max-width:599px) {
+    hr::before {
+        z-index: -1;
+        width: 0;
     }
 }
 
