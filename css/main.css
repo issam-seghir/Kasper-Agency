@@ -39,7 +39,7 @@
     --main-gap: 4rem;
     --image-gap: 0.3rem;
     --min-card-width: 37rem;
-    --vertical-space: 5rem;
+    --vertical-space: 10rem;
     --main-border-radius: clamp(5px, 2vw, 7px);
 
     /*? Style  */
@@ -488,7 +488,8 @@ header .search {
 }
 
 .services {
-    padding-inline: var(--page-padding-x);
+    margin-inline: var(--page-padding-x);
+    margin-block-end: 20rem;
 }
 
 @media (max-width: 870px) {
@@ -519,13 +520,80 @@ i {
 
 /*? part x.x : service presentation  */
 .presentation {
-    position: relative;
-    background: url("../assets/images/blue sea.webp");
+    /* position: relative; */
     background-size: cover;
     /* padding: 8rem; */
     padding-block-start: 4rem;
     padding-block: 19vh;
     /* margin-inline: var(--page-padding-x); */
+}
+
+.presentation svg .colud-stage-1 {
+    animation: move-2 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+}
+
+.presentation svg .colud-stage-2 {
+    animation: move-1 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+}
+
+.presentation svg .colud-stage-3 {
+    animation: move-2 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+}
+
+.presentation svg #fly-man {
+    animation: fly 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+}
+.presentation svg #stars {
+    opacity: 0;
+    animation:
+        fly  4s cubic-bezier(.46, .03, .52, .96) infinite both alternate,
+        fade-in 0.5s linear infinite both alternate;
+}
+.presentation svg #stars > *{
+    animation:
+        rotate  4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+}
+
+@keyframes move-1 {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes move-2 {
+    from {
+        transform: translate(50px, 20px);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+@keyframes fly {
+    from {
+        transform: translate(50px, 20px);
+    }
+
+}
+@keyframes fade-in {
+    from {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+@keyframes rotate {
+    from {
+
+        transform: rotate(14deg);
+
+    }
 }
 
 .presentation .desc {
@@ -892,7 +960,7 @@ div[data-item*="assassin"] img {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 4rem;
-    margin-block: 6rem;
+    margin-block: var(--vertical-space);
 }
 
 .achievement>* {
@@ -1859,8 +1927,8 @@ footer .logo {
 }
 
 @media (max-width: 400px) {
-.pricing {
-    padding: 2rem;
+    .pricing {
+        padding: 2rem;
     }
 }
 
@@ -1922,6 +1990,7 @@ footer .logo {
     }
 
 }
+
 .path-sw-gradient-0 {
     animation: slide 1.5s infinite alternate linear;
 
