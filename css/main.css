@@ -746,25 +746,32 @@ i {
     position: relative;
     width: 300px;
     height: 300px;
-    border: 3px solid rgba(14, 58, 70, 0.318);
+    /* border: 3px solid rgba(14, 58, 70, 0.318); */
     flex: 100%;
-z-index: 98;
-transition: all 0.5s ease-in-out;
+/* z-index: 98;
+transition: all 0.5s ease-in-out ; */
 
 }
 
 .portfolio .product .itemBox.active {
-
     animation:
         fadeIn 1.5s ease both alternate ,
         rotate-in-2-cw 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+    }
 
-.portfolio .product .itemBox:hover {
-    transform: scale(1.1);
-    border-width: 5px;
-    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5);
-    z-index: 99;
+.portfolio .product .itemBox img {
+    z-index: 98;
+        border: 3px solid rgba(14, 58, 70, 0.318);
+            transition: all 0.5s ease-in-out;
+}
+.portfolio .product .itemBox:hover{
+    z-index: 99 ;
+
+}
+.portfolio .product .itemBox:hover img {
+    transform: scale(1.1) ;
+    border-width: 5px ;
+    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5) ;
 }
 
 
