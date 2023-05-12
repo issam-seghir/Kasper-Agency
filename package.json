@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/Issam-seghir/playground#readme",
   "dependencies": {
-    "eslint-config-wesbos": "^3.2.3"
+    "eslint-config-wesbos": "^3.2.3",
+    "typed.js": "^2.0.16"
   }
 }

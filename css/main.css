@@ -520,12 +520,9 @@ i {
 
 /*? part x.x : service presentation  */
 .presentation {
-    /* position: relative; */
-    background-size: cover;
-    /* padding: 8rem; */
-    padding-block-start: 4rem;
-    padding-block: 19vh;
-    /* margin-inline: var(--page-padding-x); */
+    position: relative;
+    padding-block: 4rem;
+
 }
 
 .presentation svg .colud-stage-1 {
@@ -540,19 +537,22 @@ i {
     animation: move-2 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
 }
 
-.presentation svg #fly-man {
+.presentation #svg-fly-man #fly-man {
     animation: fly 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
 }
-.presentation svg #stars {
+
+.presentation #svg-fly-man #stars {
     opacity: 0;
     animation:
-        fly  4s cubic-bezier(.46, .03, .52, .96) infinite both alternate,
+        fly 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate,
         fade-in 0.5s linear infinite both alternate;
 }
-.presentation svg #stars > *{
+
+.presentation #svg-fly-man #stars>* {
     animation:
-        rotate  4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
+        rotate 4s cubic-bezier(.46, .03, .52, .96) infinite both alternate;
 }
+
 
 @keyframes move-1 {
     from {
@@ -573,55 +573,116 @@ i {
         opacity: 1
     }
 }
+
 @keyframes fly {
     from {
         transform: translate(50px, 20px);
     }
 
 }
+
 @keyframes fade-in {
     from {
         opacity: 0.5;
     }
-    to{
+
+    to {
         opacity: 1;
 
     }
 }
+
 @keyframes rotate {
     from {
-
+        transform-origin: center;
         transform: rotate(14deg);
 
     }
 }
 
 .presentation .desc {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%, -50%);
-    right: 0;
-    background-color: #1b788f4c;
-    padding-block-start: 4rem;
-    padding-block-end: 15%;
-    padding-inline-start: 4rem;
-    padding-inline-end: 15%;
+    order: 1;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    flex: 1;
+    padding-inline-start: 10rem;
+}
+
+.presentation .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
-/* http://127.0.0.1:3000/css/main.css */
+.presentation .desc p {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #081423e1;
 
-.presentation img {
-    max-width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    /* color: #1b7bd0; */
-    /* background-color: blue; */
-    transition: all 1s ease;
+
 }
 
+
+
+.presentation .desc p span {
+    color: #008077;
+}
+
+@media (max-width: 768px) {
+    .presentation .desc {
+        /* from 500px to 700 */
+        padding-inline-start: clamp(0px, calc(0rem + ((1vw - 5.3px) * 29.4118)), 50px);
+        ;
+    }
+
+    .presentation .desc p {
+        font-size: 3rem;
+
+    }
+
+    .presentation #svg-fly-man {
+        width: 300px;
+    }
+
+    .presentation .container {
+        margin-block-end: -10rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .presentation .desc {
+        padding-inline-start: 0;
+    }
+
+    .presentation .desc p {
+        font-size: 2.5rem;
+
+    }
+
+    .presentation #svg-fly-man {
+        width: 250px;
+    }
+
+    .presentation .container {
+        margin-block-end: -10rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .presentation .container {
+        flex-direction: column-reverse;
+    }
+
+    .presentation .desc {
+        min-height: 114px;
+        margin: -13rem auto;
+        width: 80%;
+    }
+}
 
 /*? portfolio part   */
 
