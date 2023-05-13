@@ -95,3 +95,5 @@ document.querySelector(".form__button").addEventListener("mousedown", (e) => {
     e.preventDefault();
     document.querySelector(".subscribe").classList.add("done");
 });
+
+// feedback animation
