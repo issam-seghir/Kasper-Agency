@@ -2292,9 +2292,41 @@ footer .logo {
 
 
 
+/* slider animation */
+.slider .slide:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    animation-delay: 0;
+}
 
+.slider .slide:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    animation-delay: -2s;
+}
 
+.slider .slide:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    animation-delay: -4s;
+}
 
+@keyframes slide {
+
+    0%,
+    15%,
+    100% {
+        transform: translateX(0);
+        animation-timing-function: ease;
+    }
+
+    20% {
+        transform: translateX(-100%);
+        animation-timing-function: step-end;
+    }
+
+    95% {
+        transform: translateX(100%);
+        animation-timing-function: ease;
+    }
+}
 
 
 
