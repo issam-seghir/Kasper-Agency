@@ -688,13 +688,8 @@ i {
 
 
 .portfolio {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 40px auto;
+    padding: 3.3rem;
+    margin-block-end: 20rem;
 }
 
 
@@ -704,7 +699,7 @@ i {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 3.5rem;
 }
 
 .portfolio ul li {
@@ -747,6 +742,8 @@ i {
     width: 300px;
     height: 300px;
     flex: 100%;
+    box-shadow: 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
+    cursor: pointer;
     transition: all 0.7s ease;
 
 }
@@ -970,7 +967,6 @@ div[data-item*="assassin"] img {
 .portfolio .product .itemBox:not(:nth-child(1n + 9)):hover img {
     transform: scale(1.1);
     border-width: 5px;
-    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5);
 }
 
 .portfolio .product .itemBox:not(:nth-child(1n + 9)):hover {
@@ -1017,7 +1013,7 @@ div[data-item*="assassin"] img {
 .hero {
     position: relative;
     background-color: #00000038;
-    height: 60vh;
+    height: 100vh;
 }
 
 .hero video#myVideo {
