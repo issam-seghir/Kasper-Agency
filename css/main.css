@@ -746,32 +746,20 @@ i {
     position: relative;
     width: 300px;
     height: 300px;
-    /* border: 3px solid rgba(14, 58, 70, 0.318); */
     flex: 100%;
-/* z-index: 98;
-transition: all 0.5s ease-in-out ; */
+    transition: all 0.7s ease;
 
 }
 
 .portfolio .product .itemBox.active {
     animation:
-        fadeIn 1.5s ease both alternate ,
+        fadeIn 1.5s ease both alternate,
         rotate-in-2-cw 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
+}
 
 .portfolio .product .itemBox img {
-    z-index: 98;
-        border: 3px solid rgba(14, 58, 70, 0.318);
-            transition: all 0.5s ease-in-out;
-}
-.portfolio .product .itemBox:hover{
-    z-index: 99 ;
-
-}
-.portfolio .product .itemBox:hover img {
-    transform: scale(1.1) ;
-    border-width: 5px ;
-    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5) ;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -880,6 +868,7 @@ transition: all 0.5s ease-in-out ; */
 }
 
 .portfolio .product .itemBox:hover::before {
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -910,6 +899,7 @@ transition: all 0.5s ease-in-out ; */
 
 .portfolio .product .itemBox:hover .content h2 {
     transform: translateY(0px);
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -924,6 +914,7 @@ transition: all 0.5s ease-in-out ; */
 
 .portfolio .product .itemBox:hover .content p {
     transform: translateY(0px);
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -933,15 +924,9 @@ div[data-item*="assassin"] img {
 }
 
 
-/* more button */
-.portfolio .product .itemBox:nth-child(1n + 9) {
-    max-height: 0;
-    opacity: 0;
-        border: 3px solid transparent;
-}
-.portfolio .product .itemBox:nth-child(1n + 9) .content{
-display: none;
-}
+
+
+/* button style */
 .portfolio .btn-area {
     display: block;
     text-align: center;
@@ -970,6 +955,30 @@ display: none;
     display: none;
 }
 
+
+/* when Load more button is not clicked (unchecked label  */
+.portfolio .product .itemBox:nth-child(1n + 9) {
+    max-height: 0;
+    opacity: 0;
+}
+
+.portfolio .product .itemBox:not(:nth-child(1n + 9)) img {
+    border: 3px solid rgba(14, 58, 70, 0.318);
+
+}
+
+.portfolio .product .itemBox:not(:nth-child(1n + 9)):hover img {
+    transform: scale(1.1);
+    border-width: 5px;
+    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5);
+}
+
+.portfolio .product .itemBox:not(:nth-child(1n + 9)):hover {
+    z-index: 99;
+
+}
+
+/* when Load more button is  clicked (checked label  */
 .portfolio #btnBox {
     display: none;
     transition: all 1.5s linear;
@@ -978,7 +987,22 @@ display: none;
 .portfolio #btnBox:checked~.product .itemBox:nth-child(1n + 7) {
     max-height: 1000px;
     opacity: 1;
+}
+
+.portfolio #btnBox:checked~.product .itemBox:nth-child(1n + 7) img {
     border: 3px solid rgba(14, 58, 70, 0.318);
+
+}
+
+.portfolio #btnBox:checked~.product .itemBox:nth-child(1n + 7):hover {
+    z-index: 99;
+
+}
+
+.portfolio #btnBox:checked~.product .itemBox:nth-child(1n + 7):hover img {
+    transform: scale(1.1);
+    border-width: 5px;
+    box-shadow: 0 0 10px 1px rgba(30, 77, 92, 0.5);
 }
 
 .portfolio #btnBox:checked~.btn-area .btn2 {
