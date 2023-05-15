@@ -474,6 +474,7 @@ i {
 .presentation {
     position: relative;
     padding-block: 4rem;
+    overflow: hidden;
 
 }
 
@@ -624,6 +625,10 @@ i {
 }
 
 @media (max-width: 400px) {
+
+    .presentation {
+        overflow: visible;
+    }
 
     .presentation .container {
         flex-direction: column-reverse;

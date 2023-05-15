@@ -175,7 +175,7 @@
         </div>
     </div>
 
-    <div class="presentation" style="overflow: hidden;">
+    <div class="presentation">
 
         <div class="container" data-aos="fade-up-right" data-aos-duration="2000">
             <div class="desc">
@@ -896,8 +896,8 @@
             <source src="assets/video/mixkit-man-dressed-in-suit-crossing-the-street-4832-medium.mp4" type="video/mp4">
         </video>
         <div class="desc">
-            <h1 data-aos="zoom-in">We make a big change !!</h1>
-            <p data-aos="zoom-out">the feature here</p>
+            <h1 data-aos="zoom-in" data-aos-duration="500">We make a big change !!</h1>
+            <p data-aos="zoom-out" data-aos-duration="500">the feature here</p>
             <button>watch more</button>
         </div>
     </div>
@@ -939,10 +939,43 @@
         </div>
 
     </div>
+
+
+
+    <div class="cards splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+            <ul class="cards splide__list">
+                <li class="splide__slide">
+                    <div class="profile-pic" job="Olivia Nguyen CEO of Acme Inc">
+                        <img src="assets\images\personne-1.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="3000" class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis doloremque ratione
+                        provident ab architecto
+                        quisquam minima illo incidunt, obcaecati quia animi necessitatibus tempora praesentium
+                        recusandae
+                        esse deserunt
+                        voluptates aliquam!
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="profile-pic" job="David Smith CTO of Alpha Tech">
+                        <img src="assets\images\personne-2.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2700" class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis doloremque ratione
+                        provident ab architecto quisquam minima illo incidunt, obcaecati quia animi necessitatibus
+                        tempora
+                        praesentium recusandae esse deserunt voluptates aliquam!
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="achievement">
         <div class="feedback">
             <div class="desc">
-                <h2>feedback</h2>
+                <h2>Feedback</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti maxime saepe praesentium odio
                 </p>
             </div>
@@ -952,7 +985,7 @@
                     <div class="profile-pic" job="Olivia Nguyen CEO of Acme Inc">
                         <img src="assets\images\personne-1.jpg" alt="">
                     </div>
-                    <div class="comment">
+                    <div data-aos="fade-up" data-aos-duration="3000" class="comment">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis doloremque ratione
                         provident ab architecto
                         quisquam minima illo incidunt, obcaecati quia animi necessitatibus tempora praesentium
@@ -966,7 +999,7 @@
                     <div class="profile-pic" job="David Smith CTO of Alpha Tech">
                         <img src="assets\images\personne-2.jpg" alt="">
                     </div>
-                    <div class="comment">
+                    <div data-aos="fade-up" data-aos-duration="2700" class="comment">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis doloremque ratione
                         provident ab architecto quisquam minima illo incidunt, obcaecati quia animi necessitatibus
                         tempora
@@ -1335,6 +1368,7 @@
         // eslint-disable-next-line no-undef
         AOS.init({
             duration: 1200,
+            once: true,
         });
         // spilde.js library
         document.addEventListener("DOMContentLoaded", () => {
@@ -1356,10 +1390,27 @@
                 height: "100vh",
             });
             splide.mount();
+            // eslint-disable-next-line no-undef
+            const splide2 = new Splide(".splide2", {
+                type: "loop",
+                speed: 800,
+                rewind: true,
+                rewindSpeed: 1200,
+                perPage: 1,
+                start: 1,
+                autoplay: true,
+                Keyboard: true,
+                // paginationKeyboard: true,
+                pauseOnHover: false,
+                // Converts the image src to the css background-image URL
+                // Note : This requires height option
+                cover: true,
+                height: "100vh",
+            });
+            splide2.mount();
         });
     </script>
 
 </body>
 
 </html>
-
