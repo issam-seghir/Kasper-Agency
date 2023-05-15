@@ -393,7 +393,7 @@ header .search {
 /*? part two : landing */
 
 /* overlay effect */
-/* .landing .splide__slide::before {
+/* #landing-carousel .splide__slide::before {
     content: '';
     position: absolute;
     top: 0;
@@ -406,7 +406,7 @@ header .search {
 } */
 
 
-.landing .text {
+#landing-carousel .text {
     position: absolute;
     letter-spacing: var(--letter-spacing);
     text-transform: capitalize;
@@ -420,7 +420,7 @@ header .search {
     z-index: 1;
 }
 
-.landing .text>* {
+#landing-carousel .text>* {
     color: var(--sub-color-3) !important;
 }
 
@@ -1091,6 +1091,7 @@ div[data-item*="assassin"] img {
 
 .achievement>* {
     flex-basis: 58rem;
+    width: 90%;
 }
 
 .achievement .feedback .desc {
@@ -1116,11 +1117,9 @@ div[data-item*="assassin"] img {
     padding-inline: 5rem;
 }
 
-.achievement .feedback .cards {
-    position: relative;
-}
 
-.achievement .feedback .cards .card {
+
+.achievement .feedback #cards-carousel .card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1134,7 +1133,7 @@ div[data-item*="assassin"] img {
     margin-block-end: clamp(30px, calc(1.875rem + ((1vw - 5.4px) * 9.0909)), 90px);
 }
 
-.achievement .feedback .cards .card .profile-pic {
+.achievement .feedback #cards-carousel .card .profile-pic {
     border-radius: 50%;
     border: 5px solid rgba(36, 193, 224, 0.53);
     height: 115px;
@@ -1146,14 +1145,12 @@ div[data-item*="assassin"] img {
 
 }
 
-.achievement .feedback .cards .card .profile-pic img {
-
+.achievement .feedback #cards-carousel .card .profile-pic img {
     border-radius: 50%;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 }
 
 
-.achievement .feedback .cards .card .profile-pic::before {
+.achievement .feedback #cards-carousel .card .profile-pic::before {
     content: "";
     position: absolute;
     background: linear-gradient(to right,
@@ -1171,14 +1168,14 @@ div[data-item*="assassin"] img {
 
 
 
-.achievement .feedback .cards .card .comment {
+.achievement .feedback #cards-carousel .card .comment {
     position: relative;
     flex: 1 70%;
     padding: 2rem;
     text-align: center;
 }
 
-.achievement .feedback .cards .card .comment::before {
+.achievement .feedback #cards-carousel .card .comment::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -1192,7 +1189,7 @@ div[data-item*="assassin"] img {
             rgba(179, 248, 238, 0.875));
 }
 
-.achievement .feedback .cards .card .profile-pic::after {
+.achievement .feedback #cards-carousel .card .profile-pic::after {
     content: attr(job);
     position: absolute;
     top: 110%;
@@ -1200,7 +1197,7 @@ div[data-item*="assassin"] img {
     font-size: 1.1rem;
     font-style: normal;
     height: 21px;
-    width: 85%;
+    width: 120%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -1219,29 +1216,27 @@ div[data-item*="assassin"] img {
     }
 }
 
+.cards-carousel-arrow svg{
+            fill: url('../assets/icons/gradiantpagination.svg#MyGradient') !important;
 
-.achievement .feedback .cards .bullet {
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
 }
-
-
-.achievement .feedback .cards .bullet li {
-    border-radius: 50%;
-    border: 1px solid rgba(12, 180, 226, 0.799);
-    padding: 0.6rem;
-    margin-inline: .7rem;
-}
-
-.achievement .feedback .cards .bullet .active-bckg {
+.cards-carousel-pagination.is-active{
     background: linear-gradient(-40deg,
             rgb(179, 248, 238),
-            rgba(223, 158, 255, 0.648));
-    border-color: rgba(253, 200, 253, 0.501)
+            rgba(223, 158, 255, 0.648)) !important;
+
+
 }
+.cards-carousel-pagination{
+        background: linear-gradient(-40deg,
+                    rgb(179, 248, 238),
+                    rgba(57, 127, 255, 0.954)) !important;
+        padding: 0.6rem !important;
+        margin-inline: .7rem !important;
+
+}
+
+
 
 :root {
     --c1: #2187e7;
