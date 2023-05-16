@@ -5,29 +5,33 @@
 
 
 
-<h1 align="center" >Responsive Elzero-Template-1</h1>
+<h1 align="center" >Responsive Elzero-Template-2</h1>
 
-![cntr](https://img.shields.io/github/contributors/Issam-seghir/Elzero-Template-1?color=pink&style=for-the-badge)
-![pullreQ](https://img.shields.io/github/issues-pr/Issam-seghir/Elzero-Template-1?color=orange&style=for-the-badge)
-![comt](https://img.shields.io/github/last-commit/Issam-seghir/Elzero-Template-1?style=for-the-badge)
+![cntr](https://img.shields.io/github/contributors/Issam-seghir/Elzero-Template-2?color=pink&style=for-the-badge)
+![pullreQ](https://img.shields.io/github/issues-pr/Issam-seghir/Elzero-Template-2?color=orange&style=for-the-badge)
+![comt](https://img.shields.io/github/last-commit/Issam-seghir/Elzero-Template-2?style=for-the-badge)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 
-![frk](https://img.shields.io/github/forks/Issam-seghir/Elzero-Template-1?style=flat-square)
-![str](https://img.shields.io/github/stars/Issam-seghir/Elzero-Template-1?style=flat-square)
-![deploy](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=succes&up_message=up&url=https%3A%2F%2Fissam-seghir.github.io%2FElzero-Template-1%2F)
+![frk](https://img.shields.io/github/forks/Issam-seghir/Elzero-Template-2?style=flat-square)
+![str](https://img.shields.io/github/stars/Issam-seghir/Elzero-Template-2?style=flat-square)
+![deploy](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=succes&up_message=up&url=https%3A%2F%2Fissam-seghir.github.io%2FElzero-Template-2%2F)
 
 
   <p align="center">
-A simple, clean, and responsive template created using only CSS and HTML (no frameworks)
+This is Template-2 from the series of templates inspired by Elzero Webschool's frontend course.
 
-with a visually appealing design that looks great on both large screens 💻 and small mobile devices 📱.
+Although I followed the structure of Elzero Template 2, I added my own distinctive touch and design elements such as the logo, colors, and animations.
+
+This template reflects the culmination of my knowledge and provides a strong foundation for your new project.
+
+ If you appreciate it, please consider giving it a star ⭐
     <br />
     <br />
-    <a href="https://issam-seghir.github.io/Elzero-Template-1/">View Demo</a>
-    ·
-    <a href="https://github.com/Issam-seghir/Elzero-Template-1/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Issam-seghir/Elzero-Template-1/issues">Request Feature</a>
+    <a href="https://issam-seghir.github.io/Elzero-Template-2/">View Demo</a>
+    .
+    <a href="https://github.com/Issam-seghir/Elzero-Template-2/issues">Report Bug</a>
+    .
+    <a href="https://github.com/Issam-seghir/Elzero-Template-2/issues">Request Feature</a>
   </p>
 
 <br>
@@ -51,39 +55,51 @@ Created with [Lighthouse-Badger](https://github.com/myactionway/lighthouse-badge
 
 ## About The Project
 
-This template is made using the best practices of modern CSS techniques such as fluid typography and space using clamp() and Grid Layout. 
+I invested a considerable amount of time in building this template, from extensive research to learning new tools and harnessing the power of SVG.
 
-I have made an effort to replace every media query with modern CSS techniques. Please feel free to send a PR and suggest any changes to further improve the project based on best practices. 😊
+The stark contrast and remarkable progress compared to elzero template 1 are clearly visible.
 
-I have created this project following  the [Elzero front-end course](https://elzero.org/tracks/front-end/) .
+Therefore I can confidently say that you can expect great improvement from my next template project , Stay tuned for what's to come! 🔥  ...
+
+> I inspire  this template structur form [Elzero front-end course](https://elzero.org/tracks/front-end/) .
 
 ### Built With
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- Langauge
 
 
+  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  ![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![jquery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-## Resoursos 
+- JS library
+
+  ![npm (latest)](https://img.shields.io/npm/v/typed.js/latest?color=%23ee7&label=typed.js&style=flat-square)
+  ![Cdnjs](https://img.shields.io/cdnjs/v/splidejs?color=%23ee7&label=splide.js&style=flat-square)
+  ![npm (next)](https://img.shields.io/npm/v/aos/next?color=%23ee7&label=aos&style=flat-square)
+
+
+## Resoursos
 - ✨ Tools
   - [websemantics : fluid typo/space generator](https://websemantics.uk/tools/responsive-font-calculator/)
   - [Utopia : another fluid typo/space generator](https://utopia.fyi/grid/calculator/)
   - [modern reset css](https://github.com/Andy-set-studio/modern-css-reset/blob/master/dist/reset.css)
- 
-- 📑Articles 
+
+- 📑Articles
   - [moderncss.dev](https://moderncss.dev/)
   - [min(), max(), and clamp() CSS Functions - Ahmad Shadeed](https://ishadeed.com/article/css-min-max-clamp/)
   - [min(), max(), and clamp() are CSS magic!  CSS-Tricks](https://css-tricks.com/min-max-and-clamp-are-css-magic/)
   - [min(), max(), and clamp(): three logical CSS functions](https://web.dev/min-max-clamp/)
   - [Flexible layouts without media queries - LogRocket Blog](https://blog.logrocket.com/flexible-layouts-without-media-queries/)
-  
+
 - 💻 Turtorials
   - [Free Responsive Layouts Course - Kevin powell](https://www.kevinpowell.co/courses/)
   - [Learn Responsive Design - Web.dev](https://web.dev/learn/design/)
   - [elzero youtube channel](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF)
   - [elszero web school](https://elzero.org/practical-html-css/)
 
-- 🎨 Design 
+- 🎨 Design
   - [Leon template psd](https://www.graphberry.com/item/leon-psd-agency-template)
 
 
@@ -100,7 +116,7 @@ I have created this project following  the [Elzero front-end course](https://elz
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add the dark mode 
+- [ ] Add the dark mode
 - [ ] Improve  Accessibility
 - [ ] ...
 
@@ -140,10 +156,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <div align="center">
-  
+
    To  the kind-hearted [Oussama Elzero](https://github.com/OsamaElzero) ❤
-  
-i sincerely appreciate your effort and the time you have taken to provide us with such valuable information and advice through your excellent online courses. 
+
+i sincerely appreciate your effort and the time you have taken to provide us with such valuable information and advice through your excellent online courses.
 
 thank you for generously sharing your knowledge and expertise with us for free !!
 
@@ -153,8 +169,7 @@ thank you for generously sharing your knowledge and expertise with us for free !
 
 <div align="center">
 
-## Support Him 
+## Support Him
 
 <a href="https://www.buymeacoffee.com/OsamaElzero" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Elzero A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 </div>
-
