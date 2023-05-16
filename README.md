@@ -51,8 +51,8 @@ Created with [Lighthouse-Badger](https://github.com/myactionway/lighthouse-badge
 </div>
 
 
-![link](https://i.imgur.com/8qQeqSJ.gif)
-<!-- ![link](./assets/mockup/mockup.png) -->
+<!-- ![link](https://i.imgur.com/8qQeqSJ.gif) -->
+![link](./assets/mockup/mockup.png)
 
 
 ## About The Project
