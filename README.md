@@ -18,7 +18,7 @@
 
 
   <p align="center">
-This is Template-2 from the series of templates inspired by Elzero Webschool's frontend course.
+This is Template-2 from the series of templates inspired by Elzero Webschool frontend course.
 
 Although I followed the structure of Elzero Template 2, I added my own distinctive touch and design elements such as the logo, colors, and animations.
 
@@ -73,11 +73,17 @@ Therefore I can confidently say that you can expect great improvement from my ne
   ![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
   ![jquery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
+- illustration
+
+  ![Figma](https://img.shields.io/badge/Figma-ff577b?style=for-the-badge&logo=figma&logoColor=white)
+
 - JS library
 
-  ![npm (latest)](https://img.shields.io/npm/v/typed.js/latest?color=%23ee7&label=typed.js&style=flat-square)
-  ![Cdnjs](https://img.shields.io/cdnjs/v/splidejs?color=%23ee7&label=splide.js&style=flat-square)
-  ![npm (next)](https://img.shields.io/npm/v/aos/next?color=%23ee7&label=aos&style=flat-square)
+  [![npm (latest)](https://img.shields.io/npm/v/typed.js/latest?color=%23ee7&label=typed.js&style=flat-square)](https://github.com/mattboldt/typed.js/)
+  [![Cdnjs](https://img.shields.io/cdnjs/v/splidejs?color=%23ee7&label=splide.js&style=flat-square)](https://github.com/mattboldt/typed.js/)
+  [![npm (next)](https://img.shields.io/npm/v/aos/next?color=%23ee7&label=aos&style=flat-square)](https://github.com/michalsnik/aos)
+
+
 
 
 ## Resoursos
@@ -85,39 +91,32 @@ Therefore I can confidently say that you can expect great improvement from my ne
   - [websemantics : fluid typo/space generator](https://websemantics.uk/tools/responsive-font-calculator/)
   - [Utopia : another fluid typo/space generator](https://utopia.fyi/grid/calculator/)
   - [modern reset css](https://github.com/Andy-set-studio/modern-css-reset/blob/master/dist/reset.css)
+  - [Free svg background generator (1)](https://bgjar.com/)
+  - [Free svg background generator (2)](https://www.svgbackgrounds.com/)
+  - [Free svg illustration](https://freesvgillustration.com/)
+  - [svg wave generator](https://www.softr.io/tools/svg-wave-generator)
+  - [logo ai generator](https://logo.com/logos/artificial-intelligence)
 
 - 📑Articles
-  - [moderncss.dev](https://moderncss.dev/)
-  - [min(), max(), and clamp() CSS Functions - Ahmad Shadeed](https://ishadeed.com/article/css-min-max-clamp/)
-  - [min(), max(), and clamp() are CSS magic!  CSS-Tricks](https://css-tricks.com/min-max-and-clamp-are-css-magic/)
-  - [min(), max(), and clamp(): three logical CSS functions](https://web.dev/min-max-clamp/)
-  - [Flexible layouts without media queries - LogRocket Blog](https://blog.logrocket.com/flexible-layouts-without-media-queries/)
+
+  - [Styling And Animating Svg With Css (smashingmagazine )](https://www.smashingmagazine.com/2014/11/styling-and-animating-svgs-with-css/)
+  - [Animate SVG Path Changes in CSS (css tricks)](https://css-tricks.com/animate-svg-path-changes-in-css/)
+  - [How to animate SVG with CSS (Log Rocket)](https://blog.logrocket.com/how-to-animate-svg-css-tutorial-examples/)
 
 - 💻 Turtorials
-  - [Free Responsive Layouts Course - Kevin powell](https://www.kevinpowell.co/courses/)
-  - [Learn Responsive Design - Web.dev](https://web.dev/learn/design/)
   - [elzero youtube channel](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF)
   - [elszero web school](https://elzero.org/practical-html-css/)
 
 - 🎨 Design
-  - [Leon template psd](https://www.graphberry.com/item/leon-psd-agency-template)
 
-
-## Related Projects & inspiration 🌠
-- [@PhilopaterHany](https://github.com/PhilopaterHany/Leon-Template)
-- [@mouatezbenariba](https://github.com/mouatezbenariba/template-html-css-01)
-- [@HalemoGPA](https://github.com/HalemoGPA/HTML_CSS_TEMP_1)
-- [@Reem-Elamoudi](https://github.com/Reem-Elamoudi/elzero-template2)
-
-
-
+  - [Kasper template psd](https://www.graphberry.com/item/kasper-one-page-creative-html-theme)
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
+- [ ] Improve  Lighthouse result to (90% minimum)
 - [ ] Add the dark mode
-- [ ] Improve  Accessibility
 - [ ] ...
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
