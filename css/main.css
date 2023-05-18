@@ -2218,8 +2218,7 @@ footer .logo {
 .pricing-item .pricing-action:hover,
 .pricing-item .pricing-action:focus {
 
-    background-color: #051622d5;
-    font-size: 1.3rem;
+    /* background-color: #051622d5; */
     box-shadow: -1rem 0 3rem #3d6b77a9;
     outline: none;
 
