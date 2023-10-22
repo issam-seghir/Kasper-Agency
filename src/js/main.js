@@ -26,3 +26,21 @@ function raf(time) {
 	requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
+
+
+// ? ------------  smooth scrolling (Lenis) in anchor links (nav links) ------------
+document.querySelectorAll("nav ul a").forEach((link) => {
+	link.addEventListener("click", (e) => {
+		e.preventDefault();
+		// gsap.ticker.fps(15);
+		lenis.scrollTo(`${e.target.getAttribute("href")}`, {
+			lerp: 0.09,
+			onComplete: () => {
+				// Resume GSAP animations after scrolling is complete
+				// gsap.ticker.fps(60);
+			},
+		});
+		// const targetSection = document.querySelector(`${e.target.getAttribute("href")}`);
+		// targetSection.scrollIntoView({ behavior: "smooth" });
+	});
+});
