@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import { ViteAliases } from "vite-aliases";
 
 export default defineConfig(({ command, mode, ssrBuild }) => ({
-	base: "/Captions-AI/",
+	base: "/Kasper-Agency/",
 	// Getting rid of hashes in generated filenames
 	filenameHashing: false,
 	build: {

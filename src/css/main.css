@@ -152,16 +152,19 @@ header {
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+	gap: 2rem;
 	align-items: center;
 	justify-content: space-between;
 	width: 85%;
 	max-width: 110rem;
 	height: var(--header-height);
+	padding: 1rem;
+	padding-inline: 4rem;
+	background: rgb(0 225 255 / 11.6%);
+	backdrop-filter: blur(10px);
 	border-block-end: 2px solid var(--sub-color-3);
-     background: rgba(0, 225, 255, 0.116);
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-      border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	transition: all 0.3s ease-out;
 }
 
 .logo a {
@@ -175,8 +178,12 @@ header {
 
 header nav {
 	display: flex;
+	gap: 2rem;
 	align-items: center;
-    gap: 2rem;
+
+	@media (width <= 1200px) {
+		gap: 0;
+	}
 }
 
 .nav__toggle {
@@ -188,6 +195,7 @@ header nav ul li a {
 	padding: 1rem;
 	padding-block: calc(var(--header-height) / 2 - 1.4rem);
 	font-size: var(--navbar-font-size);
+	font-weight: 500;
 	color: var(--sub-color-3);
 	border-block-end: 2px solid transparent;
 	transition: all 0.2s;
@@ -198,13 +206,11 @@ header nav ul li:hover a {
 	border-bottom-color: var(--sub-color-2);
 }
 
-@media (width <= 799px) {
+@media (width <= 970px) {
 	.nav__toggle {
 		cursor: pointer;
-		position: absolute;
-		top: 3rem;
-		right: -1rem;
 		display: block;
+		order: 1;
 		background-color: transparent;
 		border: none;
 	}
@@ -215,6 +221,10 @@ header nav ul li:hover a {
 		opacity: 0;
 		background: rgb(2 20 28);
 		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+	}
+
+	header:has(.nav__wrapper.active) {
+		border-radius: 0;
 	}
 
 	.nav__wrapper.active {
@@ -230,6 +240,15 @@ header nav ul li:hover a {
 	}
 
 	header nav {
+		flex: 1;
+		justify-content: flex-end;
+	}
+
+	header .search {
+		flex-basis: 85%;
+	}
+
+	header ul {
 		position: absolute;
 		top: 100%;
 		right: 0;
@@ -250,10 +269,28 @@ header nav ul li:hover a {
 	}
 }
 
-@media (width >= 799px) {
+@media (width >= 970px) {
 	header nav ul {
 		display: flex;
 		list-style: none;
+	}
+}
+
+@media (width <= 600px) {
+	header {
+		width: 100%;
+		padding-inline: 1rem;
+		border-radius: 0;
+	}
+
+	header .search {
+		flex-basis: 100%;
+	}
+}
+
+@media (width <= 430px) {
+	.search__toggle {
+		width: 3.4rem !important;
 	}
 }
 
@@ -289,8 +326,8 @@ svg:hover .bar {
 
 header .search {
 	display: flex;
-        justify-content: space-between;
-    align-items: center;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .search__toggle {
@@ -305,14 +342,13 @@ header .search {
 	border: none;
 }
 
-@media (width >= 800px) {
+/* @media (width >= 970px) {
 	.search__toggle {
 		padding-inline-start: 10px;
-		border-inline-start: 1px solid #979797;
 	}
 }
 
-@media (width <= 799px) {
+@media (width <= 970px) {
 	.search__toggle {
 		position: absolute;
 		top: -6.5rem;
@@ -320,7 +356,7 @@ header .search {
 		background: url("../assets/icons/search.svg");
 		background-size: 100%;
 	}
-}
+} */
 
 .search__form {
 	flex-basis: 0%;
@@ -335,7 +371,7 @@ header .search {
 	}
 }
 
-@media (width <= 899px) and (width >=800px) {
+/* @media (width <= 899px) and (width >=800px) {
 	.search__form {
 		position: absolute;
 		top: 100%;
@@ -346,9 +382,9 @@ header .search {
 	.search__form input {
 		width: 100%;
 	}
-}
+} */
 
-@media (width <= 799px) {
+/* @media (width <= 970px) {
 	.search__form {
 		position: absolute;
 		top: 0;
@@ -359,10 +395,10 @@ header .search {
 	.search__form input {
 		width: 100%;
 	}
-}
+} */
 
 .search__form input {
-	width: 93%;
+	width: 90%;
 	padding: 0;
 	font-size: 1.6rem;
 	color: #73f4f4;
@@ -377,18 +413,19 @@ header .search {
 .search__form input:focus {
 	outline-color: #0fc3ffca;
 }
+
 .search__form input::placeholder {
 	color: #dbf5ff8a;
 }
 
-@media (width <= 799px) {
+/* @media (width <= 970px) {
 	.search__form input {
 		border-start-start-radius: 0;
 		border-start-end-radius: 0;
 		border-end-start-radius: 6px;
 		border-end-end-radius: 6px;
 	}
-}
+} */
 
 /* ? part two : landing */
 
