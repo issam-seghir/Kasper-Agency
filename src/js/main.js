@@ -99,7 +99,7 @@ splide2.mount({ Grid });
 
 // ? ------------  setup  typedJs library ------------
 const typed = new Typed(".move", {
-	strings: ["Responsive Design ", "SEO Optimization", "Secure Hosting", "E-Commerce Functionality", "Affordable Pricing"],
+	strings: ["Responsive Design ", "SEO Optimization", "Secure Hosting", "E-Commerce Tools", "Affordable Pricing"],
 	typeSpeed: 30,
 	backSpeed: 25,
 	backDelay: 1400,

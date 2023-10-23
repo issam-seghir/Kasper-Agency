@@ -111,6 +111,7 @@ body {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%2354C5CC'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23E8EBEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E8EBEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23E8EBEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E8EBEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
 	background-attachment: fixed;
 	background-size: cover;
+
 }
 
 h1,
@@ -589,7 +590,14 @@ i {
 	place-self: center center;
 	order: 1;
 	margin: 0 auto;
-	padding-inline-start: 10rem;
+	padding-inline-start: clamp(1rem, 6vw, 10rem);
+}
+.presentation .desc .flex{
+	display: flex;
+	gap: 1rem;
+	@media (width<= 970px) {
+		flex-direction: column;
+	}
 }
 
 .presentation .container {
@@ -599,7 +607,7 @@ i {
 }
 
 .presentation .desc p {
-	font-size: 4rem;
+	font-size: clamp(2rem, 4vw, 4rem);
 	font-weight: 600;
 	color: #081423e1;
 	text-transform: capitalize;
@@ -620,30 +628,41 @@ i {
 	}
 
 	.presentation #svg-fly-man {
-		width: 300px;
+		width: 350px;
+    overflow: visible;
 	}
 
 	.presentation .container {
 		margin-block-end: -10rem;
 	}
 }
-
-@media (width <= 490px) {
-	.presentation .desc {
-		padding-inline-start: 0;
+@media (width <= 680px) {
+.presentation .desc {
+    padding-inline-start: 0;
+    width: 100%;
+    text-align: center;
+}
+	.presentation .container {
+		flex-direction: column-reverse;
+		margin-block-end:0;
 	}
+}
+@media (width <= 490px) {
+	/* .presentation .desc {
+		padding-inline-start: 0;
+	} */
 
 	.presentation .desc p {
 		font-size: 2.5rem;
 	}
 
-	.presentation #svg-fly-man {
+	/* .presentation #svg-fly-man {
 		width: 250px;
-	}
+	} */
 
-	.presentation .container {
+	/* .presentation .container {
 		margin-block-end: -10rem;
-	}
+	} */
 }
 
 @media (width <= 400px) {
