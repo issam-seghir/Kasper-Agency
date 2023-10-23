@@ -49,8 +49,10 @@
 		"vite-aliases": "^0.11.3"
 	},
 	"dependencies": {
-		"typed.js": "^2.0.16",
-    "@studio-freight/lenis": "^1.0.23",
-		"gsap": "^3.12.2"
+		"@splidejs/splide": "^4.1.4",
+		"@splidejs/splide-extension-grid": "^0.4.1",
+		"@studio-freight/lenis": "^1.0.23",
+		"aos": "^2.3.1",
+		"typed.js": "^2.0.16"
 	}
 }

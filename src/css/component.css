@@ -8,7 +8,7 @@
     /* 3.6rem(57.6px) @ 25rem(400px) increasing to 6rem(96px) @ 75rem(1200px) */
     font: 400 clamp(3.6rem, calc(3.6rem + ((1vw - 0.25rem) * 8.8)), 4.5rem) var(--main-font),
         var(--fall-back-font);
-    color: var(--main-font);
+    color: var(--main-color);
     margin: 0 auto;
     padding-block: 3.45rem;
     text-transform: uppercase;
