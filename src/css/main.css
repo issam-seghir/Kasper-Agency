@@ -1036,6 +1036,10 @@ div[data-item*="assassin"] img {
 	background-color: #00acb5b2;
 	border: 2px solid #043746;
 	border-radius: 5rem;
+
+	@media (width <= 340px) {
+		width: fit-content;
+	}
 }
 
 .about .statistic .col p {
@@ -1382,19 +1386,19 @@ ul.skills li.sk-css {
 }
 
 ul.skills li.sk-htm {
-	--per: 90;
+	--per: 87;
 }
 
 ul.skills li.sk-php {
-	--per: 80;
+	--per: 90;
 }
 
 ul.skills li.sk-sql {
-	--per: 65;
+	--per: 93;
 }
 
-ul.skills li.jav {
-	--per: 50;
+ul.skills li.sk-jav {
+	--per: 85;
 }
 
 /*** Mobile view disabled to get (almost) the desired thumbnail ***/
@@ -1434,6 +1438,10 @@ ul.skills li.jav {
 	justify-content: center;
 	margin-block-start: 15rem;
 	padding: 4rem;
+
+	@media (width<= 340px) {
+		padding: 3rem;
+	}
 }
 
 .subscribe__copy {
@@ -1536,7 +1544,7 @@ ul.skills li.jav {
 .subscribe .form__button .before-submit,
 .subscribe .form__button .after-submit {
 	position: absolute;
-	top: 74%;
+	top: 79%;
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100%;
