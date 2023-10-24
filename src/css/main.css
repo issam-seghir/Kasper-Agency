@@ -168,8 +168,8 @@ header {
 }
 
 .logo a {
-	width: 110px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	background-image: url("@assets/logo/kasper.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1708,7 +1708,6 @@ textarea:focus::placeholder {
 @media (width <= 768px) {
 	.phone {
 		display: inline-block;
-		width: min-content;
 		margin-left: 30px;
 	}
 
@@ -1719,6 +1718,12 @@ textarea:focus::placeholder {
 
 	.contact-wrapper {
 		gap: 3rem;
+	}
+}
+
+@media (width <= 355px) {
+	.phone {
+		margin-left: 12px;
 	}
 }
 
@@ -1813,13 +1818,22 @@ footer .logo {
 	width: fit-content;
 	margin: 0 auto;
 }
-
+footer h3{
+	font-size: 4rem !important;
+}
 footer h3 a {
 	color: #91fffa;
 }
 
 footer p {
-	font-weight: 600;
+	text-align: center;
+
+		font-weight: 900;
+		color: #000608 !important;
+		-webkit-text-stroke-color: #64dbff3f;
+		text-stroke-color: #d5d5d526;
+		-webkit-text-stroke-width: 0.4px;
+		text-stroke-width: 1px;
 }
 
 .copyright {
@@ -1837,8 +1851,12 @@ footer p {
 	text-transform: capitalize;
 }
 
+footer .desc p a {
+	color: #c5013c;
+}
+
 .copyright span a {
-	color: rgb(0 234 255);
+	color: #c5013c;
 	transition: all 0.5s ease;
 }
 
