@@ -64,7 +64,6 @@ Created with [Lighthouse-Badger](https://github.com/myactionway/lighthouse-badge
   - UI and UX: Craft memorable digital experiences with intuitive user interfaces.
   - Web Development: Transform web concepts into responsive, efficient websites.
 
-> I inspire  this template structur form [Elzero front-end course](https://elzero.org/tracks/front-end/) .
 
 ### Built With
 
@@ -106,8 +105,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
+## Support Me
 
-## Support Him
-
-<a href="https://www.buymeacoffee.com/OsamaElzero" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Elzero A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/issam.seghir" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy ma A Coffee" style="width: 174px !important;height: 41px !important;box-shadow: 0 3px 2px 0 rgb(190 190 190 / 50%) !important;" ></a>
 </div>
