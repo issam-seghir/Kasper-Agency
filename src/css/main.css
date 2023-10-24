@@ -648,38 +648,13 @@ i {
 	}
 }
 @media (width <= 490px) {
-	/* .presentation .desc {
-		padding-inline-start: 0;
-	} */
 
 	.presentation .desc p {
 		font-size: 2.5rem;
 	}
 
-	/* .presentation #svg-fly-man {
-		width: 250px;
-	} */
-
-	/* .presentation .container {
-		margin-block-end: -10rem;
-	} */
 }
 
-@media (width <= 400px) {
-	.presentation {
-		overflow: visible;
-	}
-
-	.presentation .container {
-		flex-direction: column-reverse;
-	}
-
-	.presentation .desc {
-		width: 80%;
-		min-height: 114px;
-		margin: -13rem auto;
-	}
-}
 
 /* ? portfolio part   */
 
@@ -737,11 +712,12 @@ i {
 	width: 300px;
 	height: 300px;
 	box-shadow: 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
-	transition: all 0.7s ease;
+	transition: all 2s ease;
 }
 
+
 .portfolio .product .itemBox.active {
-	animation: fadeIn 1.5s ease both alternate, rotate-in-2-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	opacity: 1;
 }
 
 .portfolio .product .itemBox img {
@@ -759,17 +735,7 @@ i {
 	}
 }
 
-@keyframes rotate-in-2-cw {
-	0% {
-		transform: rotate(-45deg);
-		opacity: 0;
-	}
 
-	100% {
-		transform: rotate(0);
-		opacity: 1;
-	}
-}
 
 @media (width >= 768px) {
 	.portfolio .product .itemBox {
@@ -803,6 +769,7 @@ i {
 
 .portfolio .product .itemBox.hide {
 	display: none;
+	opacity: 0;
 }
 
 .portfolio .product .itemBox img {
@@ -911,9 +878,9 @@ div[data-item*="assassin"] img {
 	transition: all 0.35s ease-in-out;
 }
 
-.portfolio .btn-area:hover {
+/* .portfolio .btn-area:hover {
 	box-shadow: 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
-}
+} */
 
 .portfolio .btn-area .btn2 {
 	display: none;
