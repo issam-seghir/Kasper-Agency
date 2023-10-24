@@ -21,7 +21,8 @@
 
 **Kasper** is a creative agency with a team of **web developers**, **designers**, **graphic** artists, and **UI/UX** experts dedicated to enhancing your business.
 
-This is a **responsive** website designed using vanilla **CSS** and **JavaScript**, guaranteeing exceptional **performance** and achieving **SEO** scores of (**+90**).
+This is a **responsive** website designed using vanilla **CSS** and **JavaScript**, guaranteeing exceptional **performance** and achieving **SEO** & **Accessibility** scores of (**+90**).
+**even in mobile devices !!**
 
  If you appreciate it, please consider giving it a star ⭐
     <br />
