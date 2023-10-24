@@ -111,7 +111,6 @@ body {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%2354C5CC'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23E8EBEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E8EBEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23E8EBEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E8EBEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
 	background-attachment: fixed;
 	background-size: cover;
-
 }
 
 h1,
@@ -592,9 +591,11 @@ i {
 	margin: 0 auto;
 	padding-inline-start: clamp(1rem, 6vw, 10rem);
 }
-.presentation .desc .flex{
+
+.presentation .desc .flex {
 	display: flex;
 	gap: 1rem;
+
 	@media (width<= 970px) {
 		flex-direction: column;
 	}
@@ -628,33 +629,33 @@ i {
 	}
 
 	.presentation #svg-fly-man {
+		overflow: visible;
 		width: 350px;
-    overflow: visible;
 	}
 
 	.presentation .container {
 		margin-block-end: -10rem;
 	}
 }
+
 @media (width <= 680px) {
-.presentation .desc {
-    padding-inline-start: 0;
-    width: 100%;
-    text-align: center;
-}
+	.presentation .desc {
+		width: 100%;
+		padding-inline-start: 0;
+		text-align: center;
+	}
+
 	.presentation .container {
 		flex-direction: column-reverse;
-		margin-block-end:0;
+		margin-block-end: 0;
 	}
 }
-@media (width <= 490px) {
 
+@media (width <= 490px) {
 	.presentation .desc p {
 		font-size: 2.5rem;
 	}
-
 }
-
 
 /* ? portfolio part   */
 
@@ -715,7 +716,6 @@ i {
 	transition: all 2s ease;
 }
 
-
 .portfolio .product .itemBox.active {
 	opacity: 1;
 }
@@ -734,8 +734,6 @@ i {
 		opacity: 1;
 	}
 }
-
-
 
 @media (width >= 768px) {
 	.portfolio .product .itemBox {
@@ -977,6 +975,11 @@ div[data-item*="assassin"] img {
 .hero .desc h1 {
 	text-shadow: 0 -6px 18px rgb(116 129 150);
 	text-transform: uppercase;
+
+	@media (width<=380px) {
+		font-size: xxx-large;
+		text-wrap: balance;
+	}
 }
 
 .hero .desc p {
