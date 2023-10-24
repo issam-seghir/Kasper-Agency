@@ -5,33 +5,32 @@
 
 
 
-<h1 align="center" >Responsive Elzero-Template-2</h1>
+<h1 align="center" >Kasper Agency</h1>
 
-![cntr](https://img.shields.io/github/contributors/Issam-seghir/Elzero-Template-2?color=pink&style=for-the-badge)
-![pullreQ](https://img.shields.io/github/issues-pr/Issam-seghir/Elzero-Template-2?color=orange&style=for-the-badge)
-![comt](https://img.shields.io/github/last-commit/Issam-seghir/Elzero-Template-2?style=for-the-badge)
+![cntr](https://img.shields.io/github/contributors/issam-seghir/Kasper-Agency?color=pink&style=for-the-badge)
+![pullreQ](https://img.shields.io/github/issues-pr/issam-seghir/Kasper-Agency?color=orange&style=for-the-badge)
+![comt](https://img.shields.io/github/last-commit/issam-seghir/Kasper-Agency?style=for-the-badge)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 
-![frk](https://img.shields.io/github/forks/Issam-seghir/Elzero-Template-2?style=flat-square)
-![str](https://img.shields.io/github/stars/Issam-seghir/Elzero-Template-2?style=flat-square)
-![deploy](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=succes&up_message=up&url=https%3A%2F%2Fissam-seghir.github.io%2FElzero-Template-2%2F)
+![frk](https://img.shields.io/github/forks/issam-seghir/Kasper-Agency?style=flat-square)
+![str](https://img.shields.io/github/stars/issam-seghir/Kasper-Agency?style=flat-square)
+![deploy](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=succes&up_message=up&url=https%3A%2F%iFissam-seghir.github.io%2FKasper-Agency%2F)
 
 
   <p align="center">
-This is Template-2 from the series of templates inspired by Elzero Webschool frontend course.
 
-Although I followed the structure of Elzero Template 2, I added my own distinctive touch and design elements such as the logo, colors, and animations.
+**Kasper** is a creative agency with a team of **web developers**, **designers**, **graphic** artists, and **UI/UX** experts dedicated to enhancing your business.
 
-This template reflects the culmination of my knowledge and provides a strong foundation for your new project.
+This is a **responsive** website designed using vanilla **CSS** and **JavaScript**, guaranteeing exceptional **performance** and achieving **SEO** scores of (**+90**).
 
  If you appreciate it, please consider giving it a star ⭐
     <br />
     <br />
-    <a href="https://issam-seghir.github.io/Elzero-Template-2/">View Demo</a>
+    <a href="https://issam-seghir.github.io/Kasper-Agency/">View Demo</a>
     .
-    <a href="https://github.com/Issam-seghir/Elzero-Template-2/issues">Report Bug</a>
+    <a href="https://github.com/issam-seghir/Kasper-Agency/issues">Report Bug</a>
     .
-    <a href="https://github.com/Issam-seghir/Elzero-Template-2/issues">Request Feature</a>
+    <a href="https://github.com/issam-seghir/Kasper-Agency/issues">Request Feature</a>
   </p>
 
 <br>
@@ -52,16 +51,17 @@ Created with [Lighthouse-Badger](https://github.com/myactionway/lighthouse-badge
 
 
 <!-- ![link](https://i.imgur.com/8qQeqSJ.gif) -->
-![link](./assets/mockup/mockup.png)
+![link](src/assets/mockup/mockup.png)
 
 
 ## About The Project
+ This is a modern, creative, and innovative website designed to showcase our digital agency's services and capabilities. We're dedicated to helping businesses and brands bring their visions to life through cutting-edge design, development, and marketing solutions.
 
-I invested a considerable amount of time in building this template, from extensive research to learning new tools and harnessing the power of SVG.
-
-The stark contrast and remarkable progress compared to elzero template 1 are clearly visible.
-
-Therefore I can confidently say that you can expect great improvement from my next template project , Stay tuned for what's to come! 🔥  ...
+- Services
+  - Graphic Design: Elevate your brand's visual identity with captivating designs.
+  - Web Design: Create stunning, user-friendly websites tailored to your business.
+  - UI and UX: Craft memorable digital experiences with intuitive user interfaces.
+  - Web Development: Transform web concepts into responsive, efficient websites.
 
 > I inspire  this template structur form [Elzero front-end course](https://elzero.org/tracks/front-end/) .
 
@@ -70,10 +70,9 @@ Therefore I can confidently say that you can expect great improvement from my ne
 - Langauge
 
 
-  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  ![HTML5](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
   ![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  ![jquery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 - illustration
 
@@ -83,45 +82,8 @@ Therefore I can confidently say that you can expect great improvement from my ne
 
   [![npm (latest)](https://img.shields.io/npm/v/typed.js/latest?color=%23ee7&label=typed.js&style=flat-square)](https://github.com/mattboldt/typed.js/)
   [![Cdnjs](https://img.shields.io/cdnjs/v/splidejs?color=%23ee7&label=splide.js&style=flat-square)](https://github.com/mattboldt/typed.js/)
-  [![npm (next)](https://img.shields.io/npm/v/aos/next?color=%23ee7&label=aos&style=flat-square)](https://github.com/michalsnik/aos)
+  [![npm (next)](https://img.shields.io/npm/v/aos?color=%23ee7&label=aos&style=flat-square)](https://github.com/michalsnik/aos)
 
-
-
-
-## Resoursos
-- ✨ Tools
-  - [websemantics : fluid typo/space generator](https://websemantics.uk/tools/responsive-font-calculator/)
-  - [Utopia : another fluid typo/space generator](https://utopia.fyi/grid/calculator/)
-  - [modern reset css](https://github.com/Andy-set-studio/modern-css-reset/blob/master/dist/reset.css)
-  - [Free svg background generator (1)](https://bgjar.com/)
-  - [Free svg background generator (2)](https://www.svgbackgrounds.com/)
-  - [Free svg illustration](https://freesvgillustration.com/)
-  - [svg wave generator](https://www.softr.io/tools/svg-wave-generator)
-  - [logo ai generator](https://logo.com/logos/artificial-intelligence)
-
-- 📑Articles
-
-  - [Styling And Animating Svg With Css (smashingmagazine )](https://www.smashingmagazine.com/2014/11/styling-and-animating-svgs-with-css/)
-  - [Animate SVG Path Changes in CSS (css tricks)](https://css-tricks.com/animate-svg-path-changes-in-css/)
-  - [How to animate SVG with CSS (Log Rocket)](https://blog.logrocket.com/how-to-animate-svg-css-tutorial-examples/)
-
-- 💻 Turtorials
-  - [elzero youtube channel](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF)
-  - [elszero web school](https://elzero.org/practical-html-css/)
-
-- 🎨 Design
-
-  - [Kasper template psd](https://www.graphberry.com/item/kasper-one-page-creative-html-theme)
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Improve  Lighthouse result to (90% minimum)
-- [ ] Add the dark mode
-- [ ] ...
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -143,32 +105,6 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-
-## Special Thanks
-
-
-
-
-
-
-
-
-
-
-<div align="center">
-
-   To  the kind-hearted [Oussama Elzero](https://github.com/OsamaElzero) ❤
-
-i sincerely appreciate your effort and the time you have taken to provide us with such valuable information and advice through your excellent online courses.
-
-thank you for generously sharing your knowledge and expertise with us for free !!
-
-<img src="https://user-images.githubusercontent.com/74573675/233981012-36b8cad9-5d3d-4115-9d43-f7e46dc57bac.png" width="150" height="150">
-</div>
-
-
-<div align="center">
 
 ## Support Him
 
